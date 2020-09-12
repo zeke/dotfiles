@@ -14,14 +14,7 @@ ln -s ~/git/zeke/dotfiles/.gitignore_global .gitignore_global
 
 https://brew.sh
 
-```sh
-brew tap thoughtbot/formulae
-brew tap heroku/brew && brew install heroku
-brew install pick hub tree autojump
-brew cask install google-chrome firefox visual-studio-code github \
-  hyper simplenote sketch slack keycastr spotify vlc webtorrent \
-  caffeine plex-media-server iterm2 kap
-```
+See [Brewfile](Brewfile)
 
 ## node / npm
 
