@@ -1,12 +1,13 @@
 {
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.enablePreview": false,
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "workbench.colorTheme": "Ayu Mirage Bordered"
+    "workbench.colorTheme": "Dracula Soft",
+    "workbench.iconTheme": null
 }
