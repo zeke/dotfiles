@@ -33,7 +33,7 @@ cask 'keycastr'
 cask 'spotify'
 cask 'vlc'
 cask 'webtorrent'
-cask 'caffeine'
+cask 'keepingyouawake'
 cask 'plex-media-server'
 cask 'kap'
 
