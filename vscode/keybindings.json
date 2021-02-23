@@ -25,5 +25,9 @@
         "key": "cmd+p",
         "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
         "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+cmd+g",
+        "command": "surround.with.gettext"
     }
 ]

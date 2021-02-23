@@ -1,11 +1,11 @@
 alias ....='cd ../../../'
 alias ...='cd ../../'
 alias ..='cd ..'
-alias add='npm install --save'
 alias build='npm run build'
 alias c='git checkout'
 alias cherry='git cherry-pick'
 alias co='git checkout'
+alias cod=code
 alias comit=commit
 alias commits=glog
 alias config='edit ~/.zshrc'
@@ -15,8 +15,6 @@ alias cp='cp -r'
 alias d='cd ~/Desktop'
 alias dev='npm run dev'
 alias down='cd ~/Downloads'
-alias e='cd ~/git/electron'
-alias elec='cd ~/git/electron/electron'
 alias exiot=exit
 alias exot=exit
 alias forks='cd ~/git/forks'
@@ -36,20 +34,19 @@ alias paste=pbpaste
 alias pop='git stash pop'
 alias pull='git pull'
 alias push='git push -u origin HEAD'
-alias r='npm run'
-alias release='npm run release'
 alias refresh='source ~/.zshrc; echo ".zshrc sourced"'
-alias run='npm run'
 alias s='npm start'
-alias start='npm start'
 alias stash='git stash'
 alias status='git status'
 alias t='npm test'
 alias try='trymodule --clear && trymodule'
 alias x='exit'
-alias y=yarn
 alias z='cd ~/git/zeke'
 alias zeke='cd ~/git/zeke'
 alias camera_restart="sudo killall VDCAssistant"
 alias watch_repo='watch-gh-repos'
 alias unwatch_repo='watch-gh-repos --unwatch'
+
+alias ghs='cd ~/git/github/github; GH_SSL=1 ENABLE_EMAIL_PREVIEWS=1 script/server'
+alias ghd='cd ~/git/github/github; GH_SSL=1 ENABLE_EMAIL_PREVIEWS=1 bin/server --debug'
+alias strap='script/bootstrap --local && bin/rake db:migrate db:test:prepare'

@@ -12,7 +12,8 @@ PURE_PROMPT_SYMBOL=$
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
 export PATH=/Users/z/git/github/awssume/bin:$PATH
 export PATH="$PATH:./node_modules/.bin"
-
+export PATH="$PATH:/Users/z/Library/Python/2.7/bin"
+export PATH="$PATH:/Users/z/git/github/github/bin"
 
 # History
 export HISTSIZE=10000
@@ -143,3 +144,4 @@ eval "$(nodenv init -)"
 # eval "$(rbenv init -)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH="/usr/local/opt/crowdin@3/bin:$PATH"

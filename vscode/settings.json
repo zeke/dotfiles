@@ -1,13 +1,21 @@
 {
-    "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
-    "window.zoomLevel": 2,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.enablePreview": false,
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "workbench.colorTheme": "Palenight Theme",
-    "workbench.iconTheme": null
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.iconTheme": null,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,'Comic Mono'",
+    "surround.custom": {
+        "gettext": {
+            "label": "gettext ERB tag",
+            "description": "Surround selection with <%= _(\"SELECTION\") %>",
+            "snippet": "<%= _(\"$TM_SELECTED_TEXT\") %>$0"
+            }
+    },
+    "workbench.activityBar.visible": false,
+    "window.zoomLevel": 1
 }
