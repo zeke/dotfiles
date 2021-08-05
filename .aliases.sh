@@ -39,6 +39,7 @@ alias s='npm start'
 alias stash='git stash'
 alias status='git status'
 alias t='npm test'
+
 alias try='trymodule --clear && trymodule'
 alias x='exit'
 alias z='cd ~/git/zeke'
@@ -47,6 +48,10 @@ alias camera_restart="sudo killall VDCAssistant"
 alias watch_repo='watch-gh-repos'
 alias unwatch_repo='watch-gh-repos --unwatch'
 
-alias ghs='cd ~/git/github/github; GH_SSL=1 ENABLE_EMAIL_PREVIEWS=1 script/server'
-alias ghd='cd ~/git/github/github; GH_SSL=1 ENABLE_EMAIL_PREVIEWS=1 bin/server --debug'
+alias ghs='GH_SSL=1 ENABLE_EMAIL_PREVIEWS=1 script/server'
+alias ghd='GH_SSL=1 ENABLE_EMAIL_PREVIEWS=1 bin/server' # --debug
 alias strap='script/bootstrap --local && bin/rake db:migrate db:test:prepare'
+
+# alias t='./bin/rails test; ./bin/rspec'
+# time ./bin/rspec spec/services/dotcom/file_sync_service_spec.rb:1
+# time ./bin/rails test test/components/pricing/price_tag_test.rb:38
