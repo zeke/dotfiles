@@ -1,12 +1,4 @@
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-
-# https://github.com/sindresorhus/pure
-fpath+=("/usr/local/share/zsh/site-functions")
-autoload -Uz promptinit && promptinit
-prompt pure
-PURE_PROMPT_SYMBOL=$
+source /Users/z/git/zeke/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # PATH
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
@@ -14,14 +6,17 @@ export PATH=/Users/z/git/github/awssume/bin:$PATH
 export PATH="$PATH:./node_modules/.bin"
 export PATH="$PATH:/Users/z/Library/Python/2.7/bin"
 export PATH="$PATH:/Users/z/git/github/github/bin"
+export PATH=~/.npm-global/bin:$PATH
+
+
 
 # History
-export HISTSIZE=10000
-export HISTFILESIZE=10000
-export SAVEHIST=10000
-export HISTFILE=$HOME/.history
-export NODE_REPL_HISTORY_FILE=$HOME/.node_repl_history
-setopt append_history
+# export HISTSIZE=10000
+# export HISTFILESIZE=10000
+# export SAVEHIST=10000
+# export HISTFILE=$HOME/.history
+# export NODE_REPL_HISTORY_FILE=$HOME/.node_repl_history
+# setopt append_history
 hist() { cat $HISTFILE | grep "$*"; }
 
 export EDITOR="code"
@@ -116,7 +111,7 @@ review_pr() {
 
 mv_screenshots() {
   mv ~/Desktop/Screen\ Shot* ~/Google/Screenshots
-  mv ~/Desktop/Screen\ Recording* ~/Google/Screenshots
+  # mv ~/Desktop/Screen\ Recording* ~/Google/Screenshots
 }
 
 # set up a tiny project to try out an npm module
@@ -137,11 +132,16 @@ command_not_found_handler() {
   exit 127
 }
 
-eval "$(nodenv init -)"
+# eval "$(nodenv init -)"
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # eval "$(rbenv init -)"
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-export PATH="/usr/local/opt/crowdin@3/bin:$PATH"
+
+# https://github.com/sindresorhus/pure
+# fpath+=("/usr/local/share/zsh/site-functions")
+autoload -U promptinit; promptinit
+prompt pure
+PURE_PROMPT_SYMBOL=$

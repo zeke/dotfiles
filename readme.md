@@ -16,6 +16,13 @@ https://brew.sh
 
 See [Brewfile](Brewfile)
 
+
+```
+- Run these two commands in your terminal to add Homebrew to your PATH:
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/z/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 ## node / npm
 
 Download LTS .pkg installer from https://nodejs.org
@@ -28,12 +35,11 @@ npm i -g trymodule npe json shrug vmd ghwd
 
 ## terminal / shell / zsh
 
+- `pure` is already installed from the Brewfile
 - Snazzy theme for Terminal.app: https://github.com/sindresorhus/terminal-snazzy
 - Pretty, minimal and fast ZSH prompt: https://github.com/sindresorhus/pure
 
-```sh
-npm i -g pure-prompt
-```
+## npm
 
 ```sh
 npm config set init.author.name "Zeke Sikelianos"
