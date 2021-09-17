@@ -17,7 +17,6 @@
     },
     "git.autofetch": true,
     "copilot.secret_key": "sk-ecCOtQYmy8Jhqk9RKM94Lct9Qfk3YXdDYUP4r7VZ",
-    "workbench.statusBar.visible": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
@@ -28,6 +27,6 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "window.zoomLevel": 1,
-    "workbench.activityBar.visible": false
+    "workbench.activityBar.visible": false,
+    "window.zoomLevel": 1
 }

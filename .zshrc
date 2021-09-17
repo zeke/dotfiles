@@ -7,8 +7,7 @@ export PATH="$PATH:./node_modules/.bin"
 export PATH="$PATH:/Users/z/Library/Python/2.7/bin"
 export PATH="$PATH:/Users/z/git/github/github/bin"
 export PATH=~/.npm-global/bin:$PATH
-
-
+export PATH=~/go/bin:$PATH
 
 # History
 # export HISTSIZE=10000
@@ -140,8 +139,46 @@ command_not_found_handler() {
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 
+# BEGIN PYENV
+
 # https://github.com/sindresorhus/pure
 # fpath+=("/usr/local/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 PURE_PROMPT_SYMBOL=$
+
+
+# (The below instructions are intended for common
+# shell setups. See the README for more guidance
+# if they don't apply and/or don't work for you.)
+
+# Add pyenv executable to PATH and
+# enable shims by adding the following
+# to ~/.profile:
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+# If your ~/.profile sources ~/.bashrc,
+# the lines need to be inserted before the part
+# that does that. See the README for another option.
+
+# If you have ~/.bash_profile, make sure that it
+# also executes the above lines -- e.g. by
+# copying them there or by sourcing ~/.profile
+
+# Load pyenv into the shell by adding
+# the following to ~/.bashrc:
+
+eval "$(pyenv init -)"
+
+# Make sure to restart your entire logon session
+# for changes to profile files to take effect.
+
+# Load pyenv-virtualenv automatically by adding
+# the following to ~/.bashrc:
+
+eval "$(pyenv virtualenv-init -)"
+
+# END PYENV
