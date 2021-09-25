@@ -16,6 +16,7 @@ https://brew.sh
 
 See [Brewfile](Brewfile)
 
+At the tail end of the homebrew installation, circa September 2021:
 
 ```
 - Run these two commands in your terminal to add Homebrew to your PATH:

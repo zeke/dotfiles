@@ -28,5 +28,8 @@
         "jupyter-notebook": "left"
     },
     "workbench.activityBar.visible": false,
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
     "window.zoomLevel": 1
 }

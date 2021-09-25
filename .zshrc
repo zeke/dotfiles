@@ -8,14 +8,15 @@ export PATH="$PATH:/Users/z/Library/Python/2.7/bin"
 export PATH="$PATH:/Users/z/git/github/github/bin"
 export PATH=~/.npm-global/bin:$PATH
 export PATH=~/go/bin:$PATH
+export PATH=~/.local/bin:$PATH # pipx
 
 # History
-# export HISTSIZE=10000
-# export HISTFILESIZE=10000
-# export SAVEHIST=10000
-# export HISTFILE=$HOME/.history
-# export NODE_REPL_HISTORY_FILE=$HOME/.node_repl_history
-# setopt append_history
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export SAVEHIST=10000
+export HISTFILE=$HOME/.history
+export NODE_REPL_HISTORY_FILE=$HOME/.node_repl_history
+setopt append_history
 hist() { cat $HISTFILE | grep "$*"; }
 
 export EDITOR="code"
@@ -182,3 +183,6 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # END PYENV
+
+# Created by `pipx` on 2021-09-21 04:18:31
+export PATH="$PATH:/Users/z/.local/bin"

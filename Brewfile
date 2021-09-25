@@ -38,6 +38,7 @@ cask 'spotify'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'webtorrent'
+cask 'figma'
 
 # Fonts
 cask 'font-lato'
