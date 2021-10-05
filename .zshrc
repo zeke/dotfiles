@@ -10,6 +10,10 @@ export PATH=~/.npm-global/bin:$PATH
 export PATH=~/go/bin:$PATH
 export PATH=~/.local/bin:$PATH # pipx
 
+# gcloud
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+
 # History
 export HISTSIZE=10000
 export HISTFILESIZE=10000
@@ -61,6 +65,7 @@ alias aliases='edit ~/git/zeke/dotfiles/.aliases.sh'
 source ~/git/zeke/dotfiles/.aliases.sh
 source ~/git/zeke/dotfiles/.git_helpers.sh
 source ~/git/zeke/dotfiles/.npm_completion.sh
+source ~/git/zeke/dotfiles/.gcp_helpers.sh
 
 # Find all non-hidden files in the current path
 ff() { find . -iname '*'$*'*' -type f ! -iname ".*" ! -path "*node_modules*"; }
