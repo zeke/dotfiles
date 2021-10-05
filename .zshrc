@@ -186,3 +186,6 @@ eval "$(pyenv virtualenv-init -)"
 
 # Created by `pipx` on 2021-09-21 04:18:31
 export PATH="$PATH:/Users/z/.local/bin"
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
