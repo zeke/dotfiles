@@ -5,7 +5,7 @@
     "editor.minimap.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "GitHub Light",
     "workbench.iconTheme": null,
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,'Comic Mono'",
     "surround.custom": {
@@ -30,6 +30,9 @@
     "workbench.activityBar.visible": false,
     "[go]": {
         "editor.defaultFormatter": "golang.go"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "window.zoomLevel": 1
 }

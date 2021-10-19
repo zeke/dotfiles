@@ -116,7 +116,7 @@ review_pr() {
 
 mv_screenshots() {
   mv ~/Desktop/Screen\ Shot* ~/Google/Screenshots
-  # mv ~/Desktop/Screen\ Recording* ~/Google/Screenshots
+  mv ~/Desktop/Screen\ Recording* ~/Google/Screenshots
 }
 
 # set up a tiny project to try out an npm module
