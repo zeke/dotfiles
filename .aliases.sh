@@ -55,3 +55,10 @@ alias strap='script/bootstrap --local && bin/rake db:migrate db:test:prepare'
 # alias t='./bin/rails test; ./bin/rspec'
 # time ./bin/rspec spec/services/dotcom/file_sync_service_spec.rb:1
 # time ./bin/rails test test/components/pricing/price_tag_test.rb:38
+
+alias standup_yesterday="$EDITOR ~/Desktop/standup-$(date -v-1d '+%Y-%m-%d').md"
+alias standup="$EDITOR ~/Desktop/standup-$(date '+%Y-%m-%d').md"
+alias standup_tomorrow="$EDITOR ~/Desktop/standup-$(date -v+1d '+%Y-%m-%d').md"
+
+
+
