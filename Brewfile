@@ -23,6 +23,8 @@ brew 'pure'
 # brew 'gifsicle'
 
 # Apps
+cask 'caffeine'
+cask 'figma'
 cask 'firefox'
 cask 'github'
 cask 'google-chrome'
@@ -38,7 +40,6 @@ cask 'spotify'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'webtorrent'
-cask 'figma'
 
 # Fonts
 cask 'font-lato'
