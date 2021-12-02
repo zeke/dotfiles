@@ -5,7 +5,7 @@
     "editor.minimap.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "workbench.colorTheme": "GitHub Light",
+    "workbench.colorTheme": "GitHub Light Default",
     "workbench.iconTheme": null,
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,'Comic Mono'",
     "surround.custom": {
@@ -34,5 +34,5 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "window.zoomLevel": 1
+    "window.zoomLevel": 2
 }
