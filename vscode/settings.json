@@ -1,38 +1,45 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.editor.enablePreview": false,
-    "editor.tabSize": 2,
-    "editor.minimap.enabled": false,
-    "explorer.confirmDragAndDrop": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "workbench.colorTheme": "GitHub Light Default",
-    "workbench.iconTheme": null,
-    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,'Comic Mono'",
-    "surround.custom": {
-        "gettext": {
-            "label": "gettext ERB tag",
-            "description": "Surround selection with <%= _(\"SELECTION\") %>",
-            "snippet": "<%= _(\"$TM_SELECTED_TEXT\") %>$0"
-            }
-    },
-    "git.autofetch": true,
-    "copilot.secret_key": "sk-ecCOtQYmy8Jhqk9RKM94Lct9Qfk3YXdDYUP4r7VZ",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.inlineSuggest.enabled": true,
-    "redhat.telemetry.enabled": true,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "workbench.activityBar.visible": false,
-    "[go]": {
-        "editor.defaultFormatter": "golang.go"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "window.zoomLevel": 2
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorTheme": "fairyfloss",
+  "workbench.iconTheme": null,
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,'Comic Mono'",
+  "surround.custom": {
+    "gettext": {
+      "label": "gettext ERB tag",
+      "description": "Surround selection with <%= _(\"SELECTION\") %>",
+      "snippet": "<%= _(\"$TM_SELECTED_TEXT\") %>$0"
+    }
+  },
+  "git.autofetch": true,
+  "copilot.secret_key": "sk-ecCOtQYmy8Jhqk9RKM94Lct9Qfk3YXdDYUP4r7VZ",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.inlineSuggest.enabled": true,
+  "redhat.telemetry.enabled": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "workbench.activityBar.visible": false,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": true
+  },
+  "window.zoomLevel": 1
 }
