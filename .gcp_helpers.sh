@@ -9,7 +9,7 @@ alias gpu_ssh="gcloud compute ssh --zone $GCP_ZONE $GCP_INSTANCE"
 
 # use rsync to continuously push local changes to your remote instance
 # while matching the local directory structure 
-function gpu_push() {
+function gpu_push_working_directory_to_remote() {
   # pluck the instance's current IP out of the gcloud instance table
   local GCP_IP=$(gcloud compute instances list | grep $GCP_INSTANCE | tr -s " " | cut -f5 -d' ')
   echo "GCP_IP: $GCP_IP"
