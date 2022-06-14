@@ -18,6 +18,16 @@ coco() {
   commit $msg
 }
 
+upgrade_cog() {
+  sudo rm $(which cog)
+  sudo curl -o /usr/local/bin/cog -L https://github.com/replicate/cog/releases/latest/download/cog_`uname -s`_`uname -m`
+  sudo chmod +x /usr/local/bin/cog
+}
+
+update_cog() {
+  upgrade_cog
+}
+
 # quick pull request!
 # create a branch, commit, and PR all in one.
 qpr() {

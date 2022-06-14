@@ -7,8 +7,8 @@ export PATH="$PATH:./node_modules/.bin"
 export PATH="$PATH:/Users/z/Library/Python/2.7/bin"
 export PATH="$PATH:/Users/z/git/github/github/bin"
 export PATH=~/.npm-global/bin:$PATH
-export PATH=~/go/bin:$PATH
 export PATH=~/.local/bin:$PATH # pipx
+# export PATH=~/go/bin:$PATH # for local builds of `cog`
 
 # gcloud
 source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
@@ -29,6 +29,10 @@ export EDITOR="code"
 tree() {
   command tree -I 'node_modules' "$@"
 }
+
+# https://wilsonmar.github.io/maximum-limits/
+# inotify instance limit reached
+# sudo launchctl limit maxfiles 65536 200000
 
 dir() {
   mkdir -p $1
@@ -131,6 +135,10 @@ try_npm_module() {
   $EDITOR .
 }
 
+function pip-install-save { 
+    pip install $1 && pip freeze | grep $1 >> requirements.txt
+}
+
 command_not_found_handler() {
   echo "$@" >> $HOME/.mistyped_commands
   echo "$@ command not found. saved to $HOME/.mistyped_commands"
@@ -151,7 +159,8 @@ command_not_found_handler() {
 # fpath+=("/usr/local/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
-PURE_PROMPT_SYMBOL=$
+# PURE_PROMPT_SYMBOL=$
+PURE_PROMPT_SYMBOL=∴
 
 
 # (The below instructions are intended for common
@@ -210,4 +219,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
