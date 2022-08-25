@@ -5,7 +5,6 @@
   "editor.minimap.enabled": false,
   "explorer.confirmDragAndDrop": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.colorTheme": "fairyfloss",
   "workbench.iconTheme": null,
   "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,'Comic Mono'",
   "surround.custom": {
@@ -41,5 +40,6 @@
     "plaintext": true,
     "markdown": true
   },
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "GitHub Light"
 }
