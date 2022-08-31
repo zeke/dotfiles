@@ -68,3 +68,9 @@ cp ~/Library/Application\ Support/Code/User/*.json ~/git/zeke/dotfiles/vscode/
 ln -s ~/git/zeke/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/git/zeke/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 ```
+
+## secrets
+
+```
+touch ~/git/zeke/dotfiles/env.sh
+```
