@@ -70,6 +70,7 @@ source ~/git/zeke/dotfiles/.aliases.sh
 source ~/git/zeke/dotfiles/.git_helpers.sh
 source ~/git/zeke/dotfiles/.npm_completion.sh
 source ~/git/zeke/dotfiles/.gcp_helpers.sh
+source ~/git/zeke/dotfiles/env.sh # secrets!
 
 # Find all non-hidden files in the current path
 ff() { find . -iname '*'$*'*' -type f ! -iname ".*" ! -path "*node_modules*"; }
