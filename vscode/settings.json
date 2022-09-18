@@ -41,5 +41,6 @@
     "markdown": true
   },
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "GitHub Light"
+  "workbench.colorTheme": "GitHub Light",
+  "terminal.integrated.enableMultiLinePasteWarning": false
 }

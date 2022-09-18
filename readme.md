@@ -56,6 +56,7 @@ git config --global core.excludesfile ~/.gitignore_global
 git config --global user.name "Zeke Sikelianos"
 git config --global user.email zeke@sikelianos.com
 git config --global hub.protocol https
+git config --global init.defaultBranch main
 ```
 
 ## vscode
