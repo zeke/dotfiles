@@ -36,6 +36,7 @@ alias pull='git pull'
 alias push='git push -u origin HEAD'
 alias refresh='source ~/.zshrc; echo ".zshrc sourced"'
 alias s='npm start'
+alias settings=config
 alias stash='git stash'
 alias status='git status'
 alias t='npm test'
