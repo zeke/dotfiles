@@ -36,11 +36,15 @@
   "go.toolsManagement.autoUpdate": true,
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
+    "yaml": true,
     "plaintext": true,
     "markdown": true
   },
-  "window.zoomLevel": 1,
   "workbench.colorTheme": "GitHub Light",
-  "terminal.integrated.enableMultiLinePasteWarning": false
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "githubPullRequests.pullBranch": "never",
+  "window.zoomLevel": 1,
+  "[python]": {
+    "editor.formatOnType": true
+  }
 }

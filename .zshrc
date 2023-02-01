@@ -120,8 +120,8 @@ review_pr() {
 }
 
 mv_screenshots() {
-  mv ~/Desktop/Screen\ Shot* ~/Google/Screenshots
-  mv ~/Desktop/Screen\ Recording* ~/Google/Screenshots
+  mv ~/Desktop/Screenshot* ~/Google/Screenshots
+  # mv ~/Desktop/Screen\ Recording* ~/Google/Screenshots
 }
 
 # set up a tiny project to try out an npm module
@@ -139,6 +139,15 @@ try_npm_module() {
 function pip-install-save { 
     pip install $1 && pip freeze | grep $1 >> requirements.txt
 }
+
+function get_prediction() {
+  UUID=$1
+  curl -s \
+    -H "Authorization: Token $REPLICATE_API_TOKEN" \
+    -H 'Content-Type: application/json' \
+    "https://api.replicate.com/v1/predictions/$UUID" | jq
+}
+
 
 command_not_found_handler() {
   echo "$@" >> $HOME/.mistyped_commands
@@ -160,9 +169,17 @@ command_not_found_handler() {
 # fpath+=("/usr/local/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
-# PURE_PROMPT_SYMBOL=$
-PURE_PROMPT_SYMBOL=∴
+PURE_PROMPT_SYMBOL=$
+# PURE_PROMPT_SYMBOL=∴
 
+# https://stackoverflow.com/a/20026992
+# Before:
+# ~/git/zeke/dotfiles main* ⇡
+# python-3.10.4 $
+# After:
+# ~/git/zeke/dotfiles main* ⇡
+# $
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # (The below instructions are intended for common
 # shell setups. See the README for more guidance
@@ -203,3 +220,8 @@ eval "$(pyenv virtualenv-init -)"
 export PATH="$PATH:/Users/z/.local/bin"
 
 export PATH="$HOME/.poetry/bin:$PATH"
+# Hishtory Config:
+export PATH="$PATH:/Users/z/.hishtory"
+source /Users/z/.hishtory/config.zsh
+
+source /Users/z/.docker/init-zsh.sh || true # Added by Docker Desktop

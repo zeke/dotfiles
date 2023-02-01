@@ -60,9 +60,11 @@ alias strap='script/bootstrap --local && bin/rake db:migrate db:test:prepare'
 alias standup="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date '+%Y-%m-%d').md"
 alias standup_tomorrow="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v+1d '+%Y-%m-%d').md"
 alias standup_yesterday="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v-1d '+%Y-%m-%d').md"
+alias standup_day_before_yesterday="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v-2d '+%Y-%m-%d').md"
 
 alias today=standup
 alias tomorrow=standup_tomorrow
 alias yesterday=standup_yesterday
+alias day_before_yesterday=standup_day_before_yesterday
 
-alias fig=docker-compose
+alias fig="docker compose"
