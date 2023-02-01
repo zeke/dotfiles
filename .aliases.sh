@@ -62,6 +62,7 @@ alias standup_tomorrow="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(da
 alias standup_yesterday="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v-1d '+%Y-%m-%d').md"
 alias standup_day_before_yesterday="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v-2d '+%Y-%m-%d').md"
 
+alias standups="$EDITOR ~/git/zeke/replicate-stuff/standups"
 alias today=standup
 alias tomorrow=standup_tomorrow
 alias yesterday=standup_yesterday
