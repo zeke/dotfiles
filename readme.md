@@ -43,10 +43,10 @@ npm i -g trymodule npe json shrug vmd ghwd
 ## npm
 
 ```sh
-npm config set init.author.name "Zeke Sikelianos"
-npm config set init.author.email zeke@sikelianos.com
-npm config set init.author.url http://zeke.sikelianos.com
-npm config set init.license MIT
+npm config set init-author-name "Zeke Sikelianos"
+npm config set init-author-email zeke@sikelianos.com
+npm config set init-author-url http://zeke.sikelianos.com
+npm config set init-license MIT
 ```
 
 ## git
