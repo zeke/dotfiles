@@ -40,11 +40,12 @@
     "plaintext": true,
     "markdown": true
   },
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "Default Light+",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "githubPullRequests.pullBranch": "never",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 2,
   "[python]": {
     "editor.formatOnType": true
-  }
+  },
+  "python.defaultInterpreterPath": "/Users/z/.pyenv/versions/3.10.4/envs/python-3.10.4"
 }

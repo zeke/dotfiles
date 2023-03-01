@@ -147,6 +147,7 @@ function get_prediction() {
     -H 'Content-Type: application/json' \
     "https://api.replicate.com/v1/predictions/$UUID" | jq
 }
+alias p=get_prediction
 
 
 command_not_found_handler() {

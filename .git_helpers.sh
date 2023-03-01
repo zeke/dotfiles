@@ -28,6 +28,14 @@ update_cog() {
   upgrade_cog
 }
 
+gptsh () {
+  echo "# shell command to $*"
+  output=$(npx chatgpt "write a shell command to $*")
+  echo "# $output"
+  echo ""
+  echo $output | bash
+}
+
 # quick pull request!
 # create a branch, commit, and PR all in one.
 qpr() {
