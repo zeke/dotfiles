@@ -150,6 +150,34 @@ function get_prediction() {
 alias p=get_prediction
 
 
+function predictions() {
+  UUID=$1
+  curl -s \
+    -H "Authorization: Token $REPLICATE_API_TOKEN" \
+    -H 'Content-Type: application/json' \
+    "https://api.replicate.com/v1/predictions" | jq
+}
+
+function get_model() {
+  MODEL_WITH_OWNER=$1
+  curl -s \
+    -H "Authorization: Token $REPLICATE_API_TOKEN" \
+    -H 'Content-Type: application/json' \
+    "https://api.replicate.com/v1/models/$MODEL_WITH_OWNER" | jq
+}
+
+function get_model_version() {
+  MODEL_OWNER=$1
+  MODEL_NAME=$2
+  VERSION_ID=$3
+  curl -s \
+    -H "Authorization: Token $REPLICATE_API_TOKEN" \
+    -H 'Content-Type: application/json' \
+    "https://api.replicate.com/v1/models/$MODEL_OWNER/$MODEL_NAME/versions/$VERSION_ID" | jq
+}
+
+
+
 command_not_found_handler() {
   echo "$@" >> $HOME/.mistyped_commands
   echo "$@ command not found. saved to $HOME/.mistyped_commands"

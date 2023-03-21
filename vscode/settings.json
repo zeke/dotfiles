@@ -26,7 +26,6 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "workbench.activityBar.visible": false,
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
@@ -43,9 +42,10 @@
   "workbench.colorTheme": "Default Light+",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "githubPullRequests.pullBranch": "never",
-  "window.zoomLevel": 2,
   "[python]": {
     "editor.formatOnType": true
   },
-  "python.defaultInterpreterPath": "/Users/z/.pyenv/versions/3.10.4/envs/python-3.10.4"
+  "python.defaultInterpreterPath": "/Users/z/.pyenv/versions/3.10.4/envs/python-3.10.4",
+  "window.zoomLevel": 1,
+  "workbench.activityBar.visible": false
 }
