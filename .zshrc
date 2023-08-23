@@ -68,6 +68,7 @@ add-npm-script() {
 alias aliases='edit ~/git/zeke/dotfiles/.aliases.sh'
 source ~/git/zeke/dotfiles/.aliases.sh
 source ~/git/zeke/dotfiles/.git_helpers.sh
+source ~/git/zeke/dotfiles/.replicate_helpers.sh
 source ~/git/zeke/dotfiles/.npm_completion.sh
 source ~/git/zeke/dotfiles/.gcp_helpers.sh
 source ~/git/zeke/dotfiles/env.sh # secrets!
