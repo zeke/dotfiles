@@ -255,3 +255,11 @@ export PATH="$PATH:/Users/z/.hishtory"
 source /Users/z/.hishtory/config.zsh
 
 source /Users/z/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+# pnpm
+export PNPM_HOME="/Users/z/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
