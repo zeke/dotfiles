@@ -28,6 +28,8 @@ update_cog() {
   upgrade_cog
 }
 
+alias gocog='~/go/bin/cog'
+
 gptsh () {
   echo "# shell command to $*"
   output=$(npx chatgpt "write a shell command to $*")

@@ -6,6 +6,7 @@ alias c='git checkout'
 alias cherry='git cherry-pick'
 alias co='git checkout'
 alias cod=code
+alias code=cursor
 alias comit=commit
 alias commits=glog
 alias config='edit ~/.zshrc'

@@ -47,5 +47,6 @@
   },
   "python.defaultInterpreterPath": "/Users/z/.pyenv/versions/3.10.4/envs/python-3.10.4",
   "window.zoomLevel": 1,
-  "workbench.activityBar.visible": false
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "workbench.activityBar.location": "hidden"
 }

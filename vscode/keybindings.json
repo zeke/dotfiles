@@ -29,5 +29,25 @@
     {
         "key": "ctrl+cmd+g",
         "command": "surround.with.gettext"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "cursorai.action.generateInTerminal",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+k",
+        "command": "-cursorai.action.generateInTerminal",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "aipopup.action.modal.generate",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "-aipopup.action.modal.generate",
+        "when": "editorFocus"
     }
 ]
