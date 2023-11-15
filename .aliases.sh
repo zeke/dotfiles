@@ -58,15 +58,22 @@ alias strap='script/bootstrap --local && bin/rake db:migrate db:test:prepare'
 # time ./bin/rspec spec/services/dotcom/file_sync_service_spec.rb:1
 # time ./bin/rails test test/components/pricing/price_tag_test.rb:38
 
-alias standup="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date '+%Y-%m-%d').md"
-alias standup_tomorrow="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v+1d '+%Y-%m-%d').md"
-alias standup_yesterday="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v-1d '+%Y-%m-%d').md"
-alias standup_day_before_yesterday="$EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v-2d '+%Y-%m-%d').md"
+function today() {
+  $EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date '+%Y-%m-%d').md
+}
+function day_after_tomorrow() {
+  $EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v+2d '+%Y-%m-%d').md
+}
+function tomorrow() {
+  $EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v+1d '+%Y-%m-%d').md
+}
+function yesterday() {
+  $EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v-1d '+%Y-%m-%d').md
+}
+function day_before_yesterday() {
+  $EDITOR ~/git/zeke/replicate-stuff/standups/standup-$(date -v-2d '+%Y-%m-%d').md
+}
 
 alias standups="$EDITOR ~/git/zeke/replicate-stuff/standups"
-alias today=standup
-alias tomorrow=standup_tomorrow
-alias yesterday=standup_yesterday
-alias day_before_yesterday=standup_day_before_yesterday
 
 alias fig="docker compose"
