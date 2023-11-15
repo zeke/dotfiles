@@ -23,7 +23,7 @@ export NODE_REPL_HISTORY_FILE=$HOME/.node_repl_history
 setopt append_history
 hist() { cat $HISTFILE | grep "$*"; }
 
-export EDITOR="code"
+export EDITOR="cursor"
 
 # brew install tree
 tree() {
