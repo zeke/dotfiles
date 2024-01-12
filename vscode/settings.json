@@ -46,7 +46,7 @@
     "editor.formatOnType": true
   },
   "python.defaultInterpreterPath": "/Users/z/.pyenv/versions/3.10.4/envs/python-3.10.4",
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 1,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "workbench.activityBar.location": "hidden",
   "nxConsole.showNodeVersionOnStartup": false

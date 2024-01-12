@@ -38,6 +38,20 @@ gptsh () {
   echo $output | bash
 }
 
+jqai () {
+  query=$(npx chatgpt "rewrite the following english description as an argument to the jq command line tool. just print the argument, not the full jq command. use single quotes for any quotes inside the command, and wrap the whole command in double quotes: $*")
+
+  query="${query//\"\"/\"}"
+  
+  # echo query to stderr
+  echo $query >&2
+
+  jq "$query" <<< "$(cat)"
+}
+
+
+
+
 # quick pull request!
 # create a branch, commit, and PR all in one.
 qpr() {
