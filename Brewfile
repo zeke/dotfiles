@@ -1,14 +1,8 @@
 # Taps
-tap 'homebrew/cask'
-tap 'homebrew/cask-eid'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
-tap 'heroku/brew' # for `heroku` binary
 tap 'thoughtbot/formulae' # for `pick` binary
 
 # Binaries
-brew 'heroku'
 brew 'pick'
 brew 'git'
 brew 'tree'
