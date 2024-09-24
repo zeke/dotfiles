@@ -20,7 +20,6 @@ alias exiot=exit
 alias exot=exit
 alias forks='cd ~/git/forks'
 alias fpush='git push -f origin HEAD'
-alias git=hub
 alias github='cd ~/git/github'
 alias global='npm install --global'
 alias glog='git log --pretty=oneline'

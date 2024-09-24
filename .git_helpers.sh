@@ -81,7 +81,8 @@ pr() {
   # use last commit message as PR title
   local msg=$(git reflog -1 | sed 's/^.*: //')
   echo "Creating PR: $msg"
-  hub pull-request -m "$msg" -o
+  # TODO: Update this to use `gh` instead of `hub`
+  # hub pull-request -m "$msg" -o
 }
 
 # Usage: fetch some-remote-branch
