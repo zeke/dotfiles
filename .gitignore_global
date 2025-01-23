@@ -1,5 +1,3 @@
-.vscode/
-.vscode/settings.json
 .DS_Store
 .pt
 node_modules

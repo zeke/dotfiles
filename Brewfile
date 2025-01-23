@@ -18,6 +18,7 @@ brew 'pure'
 
 # Apps
 cask 'caffeine'
+cask 'chatgpt'
 cask 'cleanshot'
 cask 'cursor'
 cask 'figma'
