@@ -200,9 +200,15 @@ PURE_PROMPT_SYMBOL=$
 export PATH="$PATH:/Users/z/.local/bin"
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+
 # Hishtory Config:
 export PATH="$PATH:/Users/z/.hishtory"
 source /Users/z/.hishtory/config.zsh
+
+# See also https://docs.atuin.sh/ as an alternative to hishtory
+
+
 
 # pnpm
 export PNPM_HOME="/Users/z/Library/pnpm"
