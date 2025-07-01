@@ -53,6 +53,18 @@ proj() {
   edit .
 }
 
+ts-proj() {
+  git clone https://github.com/zeke/typescript-project-starter $1
+  cd $1
+  rm -rf .git
+  git init
+  npm i
+  npm test
+  $EDITOR .
+}
+
+alias ts-project=ts-proj
+
 add-npm-script() {
   set -x
   local filename=script/$1.js
@@ -135,6 +147,15 @@ try_npm_module() {
 function pip-install-save { 
     pip install $1 && pip freeze | grep $1 >> requirements.txt
 }
+
+function get_operation() {
+  OPERATION_ID=$1 
+  COMMAND="curl -s https://api.replicate.com/openapi.json | jq '.paths[][] | select(.operationId==\"$OPERATION_ID\")'"
+  echo $COMMAND
+  echo ""
+  eval "$COMMAND" | jq
+}
+alias operation=get_operation
 
 function get_prediction() {
   UUID=$1
@@ -222,3 +243,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(gh copilot alias -- zsh)"
+export PATH=~/.npm-global/bin:$PATH
+
+# Added by Windsurf
+export PATH="/Users/z/.codeium/windsurf/bin:$PATH"
