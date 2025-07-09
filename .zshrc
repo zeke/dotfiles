@@ -247,3 +247,8 @@ export PATH=~/.npm-global/bin:$PATH
 
 # Added by Windsurf
 export PATH="/Users/z/.codeium/windsurf/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/z/.lmstudio/bin"
+# End of LM Studio CLI section
+
