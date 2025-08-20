@@ -1,1 +1,6 @@
 env.sh
+
+.claude/projects
+.claude/statsig
+.claude/todos
+.claude/ide

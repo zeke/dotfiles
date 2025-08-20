@@ -59,6 +59,12 @@ git config --global hub.protocol https
 git config --global init.defaultBranch main
 ```
 
+## claude
+
+```sh
+ln -s ~/git/zeke/dotfiles/.claude ~/.claude
+```
+
 ## vscode
 
 ```sh
