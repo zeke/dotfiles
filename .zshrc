@@ -252,3 +252,11 @@ export PATH="/Users/z/.codeium/windsurf/bin:$PATH"
 export PATH="$PATH:/Users/z/.lmstudio/bin"
 # End of LM Studio CLI section
 
+export PATH="$HOME/.local/bin:$PATH"
+
+# bun completions
+[ -s "/Users/z/.bun/_bun" ] && source "/Users/z/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
