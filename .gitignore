@@ -4,3 +4,4 @@ env.sh
 .claude/statsig
 .claude/todos
 .claude/ide
+.claude/shell-snapshots
