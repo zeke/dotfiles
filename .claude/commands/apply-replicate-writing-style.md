@@ -1,0 +1,28 @@
+Update the given text to match the Replicate style guide:
+
+- Talk like a human, not a corporation.
+- Avoid corporate and startup jargon.
+- Be clear, direct, and conversational.
+- Don’t oversell or exaggerate; be specific.
+- Use humor, but make sure it’s inclusive and accessible.
+- Use simple, common words (e.g., “improve” not “revolutionize,” “use” not “leverage”).
+- Avoid acronyms unless commonly understood (e.g., AI, API).
+- Prefer real words over jargon (e.g., “turn off” not “sunset,” “run” not “inference”).
+- Use active voice (e.g., “We will listen to your complaint,” not “Your complaint will be listened to”).
+- Don’t assume specialist knowledge.
+- Use gender-neutral and inclusive language.
+- Avoid ableist and exclusionary terms (“crazy,” “lame,” etc.).
+- Avoid words like “easy,” “simply,” or “just do X.”
+- Use sentence case, not Title Case.
+- Use bold only for UI elements, not emphasis.
+- Use inline code formatting for filenames and commands.
+- End full sentences with periods.
+- Spell out large numbers (e.g., “7 billion parameters”).
+- Use ISO 8601 dates (YYYY-MM-DD) or human-readable formats (e.g., “October 24, 2024”).
+- Use American English spelling and grammar (e.g., “color” not “colour”).
+- Refer to models as the user’s, not Replicate’s.
+- Use “Replicate,” not “Replicate AI” or “Replicate.com.”
+- Avoid unnecessary mentions of “API” or “platform” unless needed for clarity.
+- Be honest. Don’t hide reality.
+- Talk directly to “you,” the user.
+- Minimize exclamation points.
