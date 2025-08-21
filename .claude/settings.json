@@ -1,5 +1,27 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "model": "sonnet",
-  "includeCoAuthoredBy": false
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Bash(./script/*)",
+      "Bash(./scripts/*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr list *)",
+      "Bash(gh pr view *)",
+      "Bash(gh pr view:*)",
+      "Bash(git add:*)",
+      "Bash(git checkout:*)",
+      "Bash(git commit:*)",
+      "Bash(npm *)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(gh pr create *)",
+      "Bash(gh pr update *)"
+    ],
+    "deny": [
+      "Bash(gh pr merge *)",
+      "Bash(gh pr delete *)"
+    ]
+  } 
 }
