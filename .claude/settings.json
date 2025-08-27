@@ -36,6 +36,7 @@
       "Bash(scripts/start:*)",
       "Bash(scripts/test:*)",
       "Bash(time:*)",
+      "Edit",
       "WebFetch(domain:*)",
       "WebSearch"
     ],
