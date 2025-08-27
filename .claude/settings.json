@@ -29,6 +29,12 @@
       "Bash(script/setup:*)",
       "Bash(script/start:*)",
       "Bash(script/test:*)",
+      "Bash(scripts/bootstrap:*)",
+      "Bash(scripts/format:*)",
+      "Bash(scripts/lint:*)",
+      "Bash(scripts/setup:*)",
+      "Bash(scripts/start:*)",
+      "Bash(scripts/test:*)",
       "Bash(time:*)",
       "WebFetch(domain:*)",
       "WebSearch"
