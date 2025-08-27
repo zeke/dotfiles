@@ -9,6 +9,7 @@
       "Bash(gh pr list:*)",
       "Bash(gh pr view:*)",
       "Bash(git add:*)",
+      "Bash(git check-ignore:*)",
       "Bash(git checkout:*)",
       "Bash(git commit:*)",
       "Bash(git log:*)",
