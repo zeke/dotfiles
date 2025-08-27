@@ -217,11 +217,8 @@ PURE_PROMPT_SYMBOL=$
 # PURE_PROMPT_SYMBOL=∴
 
 
-# Created by `pipx` on 2021-09-21 04:18:31
 export PATH="$PATH:/Users/z/.local/bin"
-
 export PATH="$HOME/.poetry/bin:$PATH"
-
 
 # Hishtory Config:
 export PATH="$PATH:/Users/z/.hishtory"
@@ -230,33 +227,21 @@ source /Users/z/.hishtory/config.zsh
 # See also https://docs.atuin.sh/ as an alternative to hishtory
 
 
+# # pnpm
+# export PNPM_HOME="/Users/z/Library/pnpm"
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac
+# # pnpm end# Added by LM Studio CLI tool (lms)
 
-# pnpm
-export PNPM_HOME="/Users/z/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end# Added by LM Studio CLI tool (lms)
 export PATH="$PATH:/Users/z/.cache/lm-studio/bin"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(gh copilot alias -- zsh)"
 export PATH=~/.npm-global/bin:$PATH
-
-# Added by Windsurf
-export PATH="/Users/z/.codeium/windsurf/bin:$PATH"
-
-# Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/z/.lmstudio/bin"
-# End of LM Studio CLI section
-
 export PATH="$HOME/.local/bin:$PATH"
 
-# bun completions
-[ -s "/Users/z/.bun/_bun" ] && source "/Users/z/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(gh copilot alias -- zsh)"
