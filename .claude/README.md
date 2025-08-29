@@ -2,10 +2,11 @@
 
 Configuration files for [Claude Code](https://docs.anthropic.com/claude-code).
 
-- **`settings.json`** - Tool permissions and settings
-- **`commands/`** - Custom slash commands
-- **`agents/`** - Custom agent configs  
-- **`plugins/`** - Plugin configs and repos
+- [CLAUDE.md](CLAUDE.md) - Instructions for Claude Code
+- [settings.json](settings.json) - Tool permissions and settings
+- [commands/](commands/) - Custom slash commands
+- [agents/](agents/) - Custom agent configs  
+- [plugins/](plugins/) - Plugin configs and repos
 
 ## Commands
 
