@@ -9,3 +9,5 @@ When writing a pull request body, be concise. Explain the problem and the soluti
 If the project has a script/lint or scripts/lint script, run it before committing changes.
 
 If linting fails, fix the linting errors and run the linter until all the errors are resolved.
+
+You have permissions to run `git push` and `gh pr create` and `gh pr update` but you never run these commands unless you're explicitly asked to "push" or "create a PR" or "update a PR".
