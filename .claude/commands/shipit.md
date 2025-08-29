@@ -10,4 +10,6 @@ Use a semantic PR title.
 
 Be concise and descriptive in the PR body.
 
+Combine all user prompts verbatim from the Claude Code session as a blockquote at the bottom of the PR body.
+
 Open the PR in the browser.
