@@ -48,7 +48,8 @@
     ],
     "deny": [
       "Bash(gh pr merge *)",
-      "Bash(gh pr delete *)"
+      "Bash(gh pr delete *)",
+      "Read(./.env)",
     ]
   } 
 }
