@@ -243,5 +243,5 @@ export PATH="$PATH:/Users/z/.lmstudio/bin"
 export PATH="$HOME/.local/bin:$PATH"
 
 
-eval "$(pyenv init --path)"
-eval "$(gh copilot alias -- zsh)"
+# eval "$(pyenv init --path)"
+# eval "$(gh copilot alias -- zsh)"
