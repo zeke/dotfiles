@@ -1,4 +1,4 @@
-.claude
+
 .DS_Store
 .pt
 node_modules
@@ -7,3 +7,7 @@ yarn-error.log
 yarn.lock
 __pycache__
 .melty
+
+# slack-mcp stuff:
+.channels_cache_v2.json
+.users_cache.json
