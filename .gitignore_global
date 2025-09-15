@@ -11,3 +11,5 @@ __pycache__
 # slack-mcp stuff:
 .channels_cache_v2.json
 .users_cache.json
+
+.claude/settings.local.json
