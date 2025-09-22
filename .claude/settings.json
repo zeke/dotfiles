@@ -5,10 +5,10 @@
     "allow": [
       "Bash(curl:*)",
       "Bash(find:*)",
-      "Bash(gh pr create *)",
+      "Bash(gh pr create :*)",
       "Bash(gh pr diff:*)",
       "Bash(gh pr list:*)",
-      "Bash(gh pr update *)",
+      "Bash(gh pr update :*)",
       "Bash(gh pr view:*)",
       "Bash(git add:*)",
       "Bash(git check-ignore:*)",
@@ -47,8 +47,8 @@
       "Bash(git reset:*)"
     ],
     "deny": [
-      "Bash(gh pr merge *)",
-      "Bash(gh pr delete *)",
+      "Bash(gh pr merge :*)",
+      "Bash(gh pr delete :*)",
       "Read(./.env)"
     ]
   },
