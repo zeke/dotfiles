@@ -11,13 +11,14 @@ If the project has a script/lint or scripts/lint script, run it before committin
 If linting fails, fix the linting errors and run the linter until all the errors are resolved.
 
 
+
 ## Writing a good PR body
 
 Observe the following when writing the body of the pull request:
 
 - Be concise and descriptive
 - Don't oversell the changes. It's not an advertisement.
-- Don't use fancy words like "comprehensive" or "utilize" or "implement" or "exhaustive"
+- Don't use fancy words like "comprehensive", "utilize", "implement", "exhaustive", "simplify", "optimize", "seamlessly"
 - Start the PR body with the words "This PR..."
 - Do not include a "Summary" heading
 - Do not mention the test plan
