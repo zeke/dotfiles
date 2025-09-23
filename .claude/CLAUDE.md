@@ -10,7 +10,7 @@ If the project has a script/lint or scripts/lint script, run it before committin
 
 If linting fails, fix the linting errors and run the linter until all the errors are resolved.
 
-
+IMPORTANT: NEVER PUSH TO THE MAIN OR DEFAULT BRANCH. ALWAYS PUSH TO A FEATURE BRANCH.
 
 ## Writing a good PR body
 
