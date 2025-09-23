@@ -43,14 +43,13 @@
       "WebFetch(domain:*)",
       "WebSearch"
     ],
-    "ask": [
-      "Bash(git reset:*)"
-    ],
     "deny": [
       "Bash(gh pr merge :*)",
       "Bash(gh pr delete :*)",
       "Read(./.env)"
+    ],
+    "ask": [
+      "Bash(git reset:*)"
     ]
-  },
-  "model": "sonnet[1m]"
+  }
 }
