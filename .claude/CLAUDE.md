@@ -12,6 +12,16 @@ If linting fails, fix the linting errors and run the linter until all the errors
 
 IMPORTANT: NEVER PUSH TO THE MAIN OR DEFAULT BRANCH. ALWAYS PUSH TO A FEATURE BRANCH.
 
+## Working with Linear
+
+Whenever you are using Linear MCP tools to review tickets, always review the comments on the ticket too, as they often contain important context or suggestions.
+
+## Working with GitHub
+
+Whenever you are commenting on a GitHub pull request, always make sure you're commenting in the right place.
+
+If you're responding to a reviewer's inline comment, then comment on their comment, not the PR itself.
+
 ## Writing a good PR body
 
 Observe the following when writing the body of the pull request:
