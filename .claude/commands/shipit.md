@@ -9,3 +9,5 @@ Use the gh CLI to create a PR, or update existing PR if one exists.
 Use a semantic PR title.
 
 Open the PR in the browser.
+
+After the PR is opened, continually monitor the CI status every 10 seconds. If anything is failing then fix it, commit, push, and keep monitoring until all checks are passing.
