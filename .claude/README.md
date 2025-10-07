@@ -30,6 +30,9 @@ npx yolox find all files recursively in this directory with the name settings.lo
 
 ```sh
 claude mcp add chrome-devtools --scope user -- npx chrome-devtools-mcp@latest
+claude mcp add cloudflare-docs https://docs.mcp.cloudflare.com/sse --transport sse --scope user
+claude mcp add cloudflare-bindings https://bindings.mcp.cloudflare.com/sse --transport sse --scope user
+claude mcp add cloudflare-builds https://builds.mcp.cloudflare.com/sse --transport sse --scope user
 claude mcp add linear https://mcp.linear.app/sse --scope user --transport sse
 claude mcp add notion https://mcp.notion.com/sse --scope user --transport sse
 claude mcp add obs --scope user -- npx -y obs-mcp@latest
@@ -37,3 +40,7 @@ claude mcp add playwright --scope user -- npx @playwright/mcp@latest --extension
 claude mcp add replicate https://mcp.replicate.com/sse --transport sse --scope user
 claude mcp add slack --scope user --transport stdio -- npx -y slack-mcp-server@latest
 ```
+
+
+
+
