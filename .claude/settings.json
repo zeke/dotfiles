@@ -51,5 +51,6 @@
     "ask": [
       "Bash(git reset:*)"
     ]
-  }
+  },
+  "model": "opus"
 }

@@ -8,13 +8,13 @@ Update the given text to match the Replicate style guide:
 - Use simple, common words (e.g., “improve” not “revolutionize,” “use” not “leverage”).
 - Avoid acronyms unless commonly understood (e.g., AI, API).
 - Prefer real words over jargon (e.g., “turn off” not “sunset,” “run” not “inference”).
-- Use active voice (e.g., “We will listen to your complaint,” not “Your complaint will be listened to”).
+- Avoid passive voice. Use active voice (e.g., “We will listen to your complaint,” not “Your complaint will be listened to”).
 - Don’t assume specialist knowledge.
 - Use gender-neutral and inclusive language.
 - Avoid ableist and exclusionary terms (“crazy,” “lame,” etc.).
 - Avoid words like “easy,” “simply,” or “just do X.”
 - Use sentence case, not Title Case.
-- Use bold only for UI elements, not emphasis.
+- Do not use bold for emphasis. Use bold for references to UI elements.
 - Use inline code formatting for filenames and commands.
 - End full sentences with periods.
 - Spell out large numbers (e.g., “7 billion parameters”).
