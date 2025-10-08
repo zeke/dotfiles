@@ -7,3 +7,4 @@ env.sh
 .claude/todos
 .claude/ide
 .claude/shell-snapshots
+.claude/debug
