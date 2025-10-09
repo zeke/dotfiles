@@ -52,5 +52,6 @@
       "Bash(git reset:*)"
     ]
   },
-  "model": "opus"
+  "model": "opus",
+  "alwaysThinkingEnabled": true
 }
