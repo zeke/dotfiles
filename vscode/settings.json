@@ -39,7 +39,7 @@
     "plaintext": true,
     "markdown": true
   },
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Default Light+",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "githubPullRequests.pullBranch": "never",
   "[python]": {
