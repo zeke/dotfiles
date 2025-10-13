@@ -52,8 +52,100 @@
       "Bash(git reset:*)"
     ]
   },
-  "alwaysThinkingEnabled": true,
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh SessionStart"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh SessionEnd"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh UserPromptSubmit"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh PreToolUse"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh PostToolUse"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh Stop"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh SubagentStop"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh Notification"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh PreCompact"
+          }
+        ]
+      }
+    ]
+  },
   "enabledPlugins": {
     "feature-dev@claude-code-plugins": true
-  }
+  },
+  "alwaysThinkingEnabled": false
 }
