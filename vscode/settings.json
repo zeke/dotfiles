@@ -49,6 +49,5 @@
   "window.zoomLevel": 1,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "workbench.activityBar.location": "hidden",
-  "nxConsole.showNodeVersionOnStartup": false,
-  "workbench.statusBar.visible": false
+  "nxConsole.showNodeVersionOnStartup": false
 }
