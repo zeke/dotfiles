@@ -1,7 +1,7 @@
 #!/bin/bash
 # Universal hook logger - logs all hook events to a JSONL file
 
-set -euo pipefail
+set -uo pipefail
 
 # Use project directory if available, otherwise home directory
 if [ -n "${CLAUDE_PROJECT_DIR:-}" ]; then
@@ -20,12 +20,22 @@ fi
 
 EVENT_TYPE="${1:-unknown}"
 
-# Read input from stdin with timeout
-input=$(timeout 5s cat || echo "{}")
+# Read all input from stdin
+# Claude Code sends JSON data to hooks via stdin
+input=$(cat)
 
-# Validate input is valid JSON
-if ! echo "$input" | jq empty 2>/dev/null; then
-  input="{}"
+# If input is empty, use empty object
+if [ -z "$input" ]; then
+  input_json="{}"
+else
+  # Validate input is valid JSON
+  if echo "$input" | jq empty 2>/dev/null; then
+    # Valid JSON - use as is
+    input_json="$input"
+  else
+    # Not valid JSON - wrap as string
+    input_json=$(jq -n --arg raw "$input" '{raw_input: $raw}')
+  fi
 fi
 
 # Create log entry with timestamp
@@ -34,7 +44,7 @@ log_entry=$(jq -n \
   --arg ts "$timestamp" \
   --arg event "$EVENT_TYPE" \
   --arg project_dir "${CLAUDE_PROJECT_DIR:-}" \
-  --argjson input "$input" \
+  --argjson input "$input_json" \
   '{
     timestamp: $ts,
     event: $event,
