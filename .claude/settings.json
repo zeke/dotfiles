@@ -147,5 +147,5 @@
   "enabledPlugins": {
     "feature-dev@claude-code-plugins": true
   },
-  "alwaysThinkingEnabled": false
+  "alwaysThinkingEnabled": true
 }
