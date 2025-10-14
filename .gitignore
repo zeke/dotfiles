@@ -8,3 +8,8 @@ env.sh
 .claude/ide
 .claude/shell-snapshots
 .claude/debug
+.claude/plugins/marketplaces/claude-code-plugins/
+
+# An experimental zeke-specific thing that logs 
+# hook events on a per-project basis.
+.claude/hook-events.jsonl
