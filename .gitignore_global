@@ -13,3 +13,8 @@ __pycache__
 .users_cache.json
 
 .claude/settings.local.json
+
+# zeke experimenting with claude code hooks (per project)...
+.claude/hook-events.jsonl
+
+.playwright-mcp

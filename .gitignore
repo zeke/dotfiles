@@ -8,3 +8,4 @@ env.sh
 .claude/ide
 .claude/shell-snapshots
 .claude/debug
+.claude/plugins/marketplaces/claude-code-plugins/
