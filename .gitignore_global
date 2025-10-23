@@ -16,5 +16,6 @@ __pycache__
 
 # zeke experimenting with claude code hooks (per project)...
 .claude/hook-events.jsonl
+PROMPTS.md
 
 .playwright-mcp

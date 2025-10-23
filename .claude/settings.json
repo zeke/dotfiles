@@ -79,6 +79,10 @@
           {
             "type": "command",
             "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh UserPromptSubmit"
+          },
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/aggregate-prompts.sh UserPromptSubmit"
           }
         ]
       }
