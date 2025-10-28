@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "plugins": {
+    "feature-dev@claude-code-plugins": {
+      "version": "1.0.0",
+      "installedAt": "2025-10-24T21:41:09.032Z",
+      "lastUpdated": "2025-10-24T21:41:09.032Z",
+      "installPath": "/Users/z/.claude/plugins/marketplaces/claude-code-plugins/plugins/feature-dev",
+      "gitCommitSha": "24aa2626cc9eb26208a38853d30dcd5d25a2ac81",
+      "isLocal": true
+    }
+  }
+}

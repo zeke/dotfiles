@@ -133,6 +133,10 @@
           {
             "type": "command",
             "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh Notification"
+          },
+          {
+            "type": "command",
+            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/notify-input-needed.sh"
           }
         ]
       }
@@ -151,5 +155,5 @@
   "enabledPlugins": {
     "feature-dev@claude-code-plugins": true
   },
-  "alwaysThinkingEnabled": true
+  "alwaysThinkingEnabled": false
 }
