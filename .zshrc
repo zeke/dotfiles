@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/z/.zsh/completions:"* ]]; then export FPATH="/Users/z/.zsh/completions:$FPATH"; fi
 autoload -Uz compinit
 compinit
 
@@ -252,3 +254,4 @@ eval "$(pyenv init --path)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+. "/Users/z/.deno/env"
