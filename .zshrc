@@ -245,3 +245,10 @@ export PATH="$HOME/.local/bin:$PATH"
 
 eval "$(pyenv init --path)"
 # eval "$(gh copilot alias -- zsh)"
+
+# bun completions
+[ -s "/Users/z/.bun/_bun" ] && source "/Users/z/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
