@@ -5,8 +5,8 @@ MESSAGE=$(cat)
 
 # Only trigger for "waiting for input" notifications
 if [[ "$MESSAGE" == *"waiting for your input"* ]] || [[ "$MESSAGE" == *"needs your input"* ]]; then
-    # Play an alert sound three times for extra attention
-    (afplay /System/Library/Sounds/Glass.aiff && sleep 0.2 && afplay /System/Library/Sounds/Glass.aiff && sleep 0.2 && afplay /System/Library/Sounds/Glass.aiff) &
+    # Play an alert sound
+    afplay /System/Library/Sounds/Glass.aiff &
 
     # Display a prominent dialog box that requires dismissal
     osascript <<EOF &
@@ -14,7 +14,7 @@ if [[ "$MESSAGE" == *"waiting for your input"* ]] || [[ "$MESSAGE" == *"needs yo
 EOF
 
     # Also show a system notification
-    osascript -e "display notification \"$MESSAGE\" with title \"🤖 Claude Needs Your Input\" sound name \"Glass\""
+    osascript -e "display notification \"$MESSAGE\" with title \"🤖 Claude Needs Your Input\""
 
     # Make terminal window bounce continuously in dock until dismissed
     osascript -e 'tell application "System Events"
