@@ -6,6 +6,8 @@ Push the branch to the remote repository.
 
 Use the gh CLI to create a PR, or update existing PR if one exists.
 
+If the repo is a fork, use the canonical repo as the base repo.
+
 Use a semantic PR title.
 
 Open the PR in the browser.
