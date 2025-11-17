@@ -153,7 +153,8 @@
     ]
   },
   "enabledPlugins": {
-    "feature-dev@claude-code-plugins": true
+    "feature-dev@claude-code-plugins": false,
+    "frontend-design@claude-code-plugins": true
   },
   "alwaysThinkingEnabled": true
 }

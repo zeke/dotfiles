@@ -8,6 +8,14 @@
       "installPath": "/Users/z/.claude/plugins/marketplaces/claude-code-plugins/plugins/feature-dev",
       "gitCommitSha": "24aa2626cc9eb26208a38853d30dcd5d25a2ac81",
       "isLocal": true
+    },
+    "frontend-design@claude-code-plugins": {
+      "version": "1.0.0",
+      "installedAt": "2025-11-16T20:43:19.560Z",
+      "lastUpdated": "2025-11-16T20:43:19.560Z",
+      "installPath": "/Users/z/.claude/plugins/marketplaces/claude-code-plugins/plugins/frontend-design",
+      "gitCommitSha": "5dd91a9fe23cf68da641cc4f01d90931c0f530ce",
+      "isLocal": true
     }
   }
 }

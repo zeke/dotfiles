@@ -69,3 +69,22 @@ claude mcp add slack --scope user --transport stdio -- npx -y slack-mcp-server@l
 ```
 
 ☝️ I find it's best to install MCP servers globally with the "user" scope, so they're avaialable across all projects.
+
+## Claude files to ignore
+
+Some of the Claude Code config stuff is personal, senstive, or otherwise unnecessary to share.
+
+Here's what I put in my dotfiles `.gitignore` file:
+
+```
+.claude/file-history
+.claude/history.jsonl
+.claude/projects
+.claude/statsig
+.claude/todos
+.claude/ide
+.claude/shell-snapshots
+.claude/debug
+.claude/plugins/marketplaces/claude-code-plugins/
+.claude/.credentials.json
+```
