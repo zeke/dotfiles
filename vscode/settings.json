@@ -39,7 +39,7 @@
     "plaintext": true,
     "markdown": true
   },
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Default Dark+",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "githubPullRequests.pullBranch": "never",
   "[python]": {
@@ -49,5 +49,6 @@
   "window.zoomLevel": 1,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "workbench.activityBar.location": "hidden",
-  "nxConsole.showNodeVersionOnStartup": false
+  "nxConsole.showNodeVersionOnStartup": false,
+  "claudeCode.preferredLocation": "sidebar"
 }
