@@ -6,5 +6,13 @@
     },
     "installLocation": "/Users/z/.claude/plugins/marketplaces/claude-code-plugins",
     "lastUpdated": "2025-11-16T20:42:27.340Z"
+  },
+  "beads-marketplace": {
+    "source": {
+      "source": "github",
+      "repo": "steveyegge/beads"
+    },
+    "installLocation": "/Users/z/.claude/plugins/marketplaces/beads-marketplace",
+    "lastUpdated": "2025-12-03T16:08:06.103Z"
   }
 }

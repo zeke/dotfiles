@@ -16,6 +16,14 @@
       "installPath": "/Users/z/.claude/plugins/marketplaces/claude-code-plugins/plugins/frontend-design",
       "gitCommitSha": "5dd91a9fe23cf68da641cc4f01d90931c0f530ce",
       "isLocal": true
+    },
+    "beads@beads-marketplace": {
+      "version": "0.28.0",
+      "installedAt": "2025-12-03T16:08:23.267Z",
+      "lastUpdated": "2025-12-03T16:08:23.267Z",
+      "installPath": "/Users/z/.claude/plugins/marketplaces/beads-marketplace/",
+      "gitCommitSha": "8d4f664b91f6fe6e138c042c5523b8e9ac7972a2",
+      "isLocal": true
     }
   }
 }
