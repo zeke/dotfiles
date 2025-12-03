@@ -83,3 +83,6 @@ function todo() {
 alias todos="todo"
 
 alias fig="docker compose"
+
+
+alias claude-offline="/Users/z/git/zeke/claude-offline/claude-offline"
