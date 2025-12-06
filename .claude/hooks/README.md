@@ -1,43 +1,16 @@
 # Claude Code Hooks
 
-Universal event logger for all Claude Code hook events.
+Custom hooks for Claude Code events.
 
-## Installed Hook
+## Installed Hooks
 
-### log-event.sh
-- **Events**: All 9 hook event types
-- **What it does**: Logs all hook events and their inputs
-- **Log Location**:
-  - `$CLAUDE_PROJECT_DIR/.claude/hook-events.jsonl` (if in a project)
-  - `~/.claude/hook-events.jsonl` (if not in a project)
-- **Format**: JSON Lines (one JSON object per line)
-- **Fields**: `timestamp`, `event`, `project_dir`, `input`
+### aggregate-prompts.sh
+- **Event**: UserPromptSubmit
+- **What it does**: Collects user prompts into a PROMPTS.md file in the project directory
 
-## Viewing Logs
-
-```bash
-# View project-specific logs (if in a project)
-cat .claude/hook-events.jsonl
-
-# View global logs (if not in a project)
-cat ~/.claude/hook-events.jsonl
-
-# Pretty print with jq
-cat .claude/hook-events.jsonl | jq
-
-# Filter by event type
-cat .claude/hook-events.jsonl | jq 'select(.event == "PreToolUse")'
-cat .claude/hook-events.jsonl | jq 'select(.event == "UserPromptSubmit")'
-
-# Count events by type
-cat .claude/hook-events.jsonl | jq -r '.event' | sort | uniq -c
-
-# View last 10 events
-tail -n 10 .claude/hook-events.jsonl | jq
-
-# Filter by project
-cat ~/.claude/hook-events.jsonl | jq 'select(.project_dir == "/path/to/project")'
-```
+### notify-input-needed.sh
+- **Event**: Notification
+- **What it does**: Shows a macOS notification when Claude needs input
 
 ## Hook Types
 

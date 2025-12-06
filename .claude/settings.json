@@ -53,76 +53,12 @@
     ]
   },
   "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh SessionStart"
-          }
-        ]
-      }
-    ],
-    "SessionEnd": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh SessionEnd"
-          }
-        ]
-      }
-    ],
     "UserPromptSubmit": [
       {
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh UserPromptSubmit"
-          },
-          {
-            "type": "command",
             "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/aggregate-prompts.sh UserPromptSubmit"
-          }
-        ]
-      }
-    ],
-    "PreToolUse": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh PreToolUse"
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh PostToolUse"
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh Stop"
-          }
-        ]
-      }
-    ],
-    "SubagentStop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh SubagentStop"
           }
         ]
       }
@@ -132,21 +68,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh Notification"
-          },
-          {
-            "type": "command",
             "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/notify-input-needed.sh"
-          }
-        ]
-      }
-    ],
-    "PreCompact": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/z/git/zeke/dotfiles/.claude/hooks/log-event.sh PreCompact"
           }
         ]
       }
@@ -157,5 +79,5 @@
     "frontend-design@claude-code-plugins": true,
     "beads@beads-marketplace": true
   },
-  "alwaysThinkingEnabled": true
+  "alwaysThinkingEnabled": false
 }

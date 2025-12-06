@@ -10,6 +10,3 @@ env.sh
 .claude/debug
 .claude/plugins/marketplaces/claude-code-plugins/
 .claude/.credentials.json
-
-# custom zeke thing:
-.claude/.claude/hook-events.jsonl

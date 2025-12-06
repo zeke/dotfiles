@@ -37,7 +37,6 @@ Located in [commands/](commands/):
 
 Located in [hooks/](hooks/):
 
-- **log-event.sh** - Logs all hook events to JSONL
 - **aggregate-prompts.sh** - Collects user prompts into PROMPTS.md
 - **notify-input-needed.sh** - Alerts when Claude needs input (macOS)
 
@@ -63,12 +62,19 @@ claude mcp add cloudflare-builds https://builds.mcp.cloudflare.com/sse --transpo
 claude mcp add linear https://mcp.linear.app/sse --scope user --transport sse
 claude mcp add notion https://mcp.notion.com/sse --scope user --transport sse
 claude mcp add obs --scope user -- npx -y obs-mcp@latest
-claude mcp add playwright --scope user -- npx @playwright/mcp@latest --extension
 claude mcp add replicate https://mcp.replicate.com/sse --transport sse --scope user
 claude mcp add slack --scope user --transport stdio -- npx -y slack-mcp-server@latest
 ```
 
+And the ones I have stopped using:
+
+```sh
+claude mcp add playwright --scope user -- npx @playwright/mcp@latest --extension
+```
+
 ☝️ I find it's best to install MCP servers globally with the "user" scope, so they're avaialable across all projects.
+
+Edit `code ~/.claude.json` to manage these after installing them.
 
 ## Claude files to ignore
 
