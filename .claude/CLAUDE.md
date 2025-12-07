@@ -48,6 +48,10 @@ Follow these style guidelines in chat, commit messages, and prose:
 - Don't oversell the changes. It's not an advertisement.
 - Don't use fancy words like "comprehensive", "utilize", "implement", "exhaustive", "simplify", "optimize", "seamlessly"
 
+## Fetching data
+
+If you make web requests to public pages and get blocked by sites like OpenAI's docs pages return 403 status codes, use Chrome Devtools MCP to open the page and get the content.
+
 ## Important rules
 
 IMPORTANT: NEVER PUSH TO THE MAIN OR DEFAULT BRANCH. ALWAYS PUSH TO A FEATURE BRANCH.
