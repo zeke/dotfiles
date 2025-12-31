@@ -79,5 +79,5 @@
     "frontend-design@claude-code-plugins": true,
     "beads@beads-marketplace": true
   },
-  "alwaysThinkingEnabled": false
+  "alwaysThinkingEnabled": true
 }

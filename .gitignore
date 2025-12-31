@@ -10,3 +10,5 @@ env.sh
 .claude/debug
 .claude/plugins/marketplaces/claude-code-plugins/
 .claude/.credentials.json
+.claude/plans
+.claude/plugins

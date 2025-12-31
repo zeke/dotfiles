@@ -6,7 +6,7 @@ MESSAGE=$(cat)
 # Only trigger for "waiting for input" notifications
 if [[ "$MESSAGE" == *"waiting for your input"* ]] || [[ "$MESSAGE" == *"needs your input"* ]]; then
     # Play an alert sound
-    afplay /System/Library/Sounds/Glass.aiff &
+    afplay /System/Library/Sounds/Morse.aiff &
 
     # Display a prominent dialog box that requires dismissal
     osascript <<EOF &
