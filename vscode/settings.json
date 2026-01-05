@@ -50,5 +50,6 @@
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "workbench.activityBar.location": "hidden",
   "nxConsole.showNodeVersionOnStartup": false,
-  "claudeCode.preferredLocation": "sidebar"
+  "claudeCode.preferredLocation": "sidebar",
+  "chat.viewSessions.orientation": "stacked"
 }

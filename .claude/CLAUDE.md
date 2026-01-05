@@ -55,3 +55,4 @@ If you make web requests to public pages and get blocked by sites like OpenAI's 
 ## Important rules
 
 IMPORTANT: NEVER PUSH TO THE MAIN OR DEFAULT BRANCH. ALWAYS PUSH TO A FEATURE BRANCH.
+- Don't push commits to branches with PRs that have already been merged.
