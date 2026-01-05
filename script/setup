@@ -1,0 +1,38 @@
+#!/bin/bash
+set -e
+
+cd ~
+
+echo "Creating symlinks..."
+ln -sf ~/git/zeke/dotfiles/.zshrc .zshrc
+ln -sf ~/git/zeke/dotfiles/.gitignore_global .gitignore_global
+ln -sf ~/git/zeke/dotfiles/.claude .claude
+
+echo "Configuring git..."
+git config --global core.excludesfile ~/.gitignore_global
+git config --global user.name "Zeke Sikelianos"
+git config --global user.email zeke@sikelianos.com
+git config --global hub.protocol https
+git config --global init.defaultBranch main
+
+echo "Configuring npm..."
+npm config set init-author-name "Zeke Sikelianos"
+npm config set init-author-email zeke@sikelianos.com
+npm config set init-author-url http://zeke.sikelianos.com
+npm config set init-license MIT
+
+echo "Installing global npm packages..."
+npm i -g trymodule npe json shrug vmd ghwd
+
+echo "Setting up VS Code..."
+mkdir -p ~/Library/Application\ Support/Code/User
+ln -sf ~/git/zeke/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/git/zeke/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+
+echo "Creating secrets file if it doesn't exist..."
+touch ~/git/zeke/dotfiles/env.sh
+
+echo "Done! Don't forget to:"
+echo "  - Install Homebrew: https://brew.sh"
+echo "  - Run: brew bundle --file=~/git/zeke/dotfiles/Brewfile"
+echo "  - Install Snazzy theme: https://github.com/sindresorhus/terminal-snazzy"
