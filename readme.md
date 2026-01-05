@@ -7,7 +7,6 @@
 
 ```sh
 ./script/setup
-brew bundle
 ```
 
 ## Terminal
