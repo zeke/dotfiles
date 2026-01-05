@@ -1,5 +1,4 @@
 # Taps
-tap 'brevdev/brev'
 tap 'cloudflare/cloudflare'
 tap 'heroku/brew'
 tap 'homebrew/bundle'
@@ -9,9 +8,7 @@ tap 'thoughtbot/formulae' # for `pick` binary
 tap 'travisvn/tap'
 
 # Binaries
-brew 'act'
 brew 'autojump'
-brew 'brev'
 brew 'cloudflared'
 brew 'cog'
 brew 'exiftool'
@@ -95,12 +92,3 @@ cask 'font-open-sans'
 cask 'font-roboto'
 cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
-
-# Mac App Store
-# mas 'Byword', id: 420212497
-# mas 'Giphy Capture', id: 668208984
-# mas 'Keynote', id: 409183694
-# mas 'Numbers', id: 409203825
-# mas 'Spark', id: 1176895641
-# mas 'Things', id: 904280696
-# mas 'Tweetbot', id: 1384080005
