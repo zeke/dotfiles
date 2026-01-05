@@ -2,8 +2,7 @@
 
 ## Setup
 
-1. Install [Homebrew](https://brew.sh)
-2. Run the setup script:
+Run the setup script:
 
 ```sh
 ./script/setup
