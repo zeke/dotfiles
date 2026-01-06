@@ -257,3 +257,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 . "/Users/z/.deno/env"
 # Added by Antigravity
 export PATH="/Users/z/.antigravity/antigravity/bin:$PATH"
+source ~/.bashrc
