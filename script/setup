@@ -42,7 +42,14 @@ npm config set init-author-url http://zeke.sikelianos.com
 npm config set init-license MIT
 
 echo "Installing global npm packages..."
-npm i -g trymodule npe json shrug vmd ghwd
+npm_packages="trymodule npe json shrug vmd ghwd"
+for pkg in $npm_packages; do
+  if ! npm list -g "$pkg" &>/dev/null; then
+    npm i -g "$pkg"
+  else
+    echo "Using $pkg"
+  fi
+done
 
 echo "Done!"
 echo "Run 'source ~/.zshrc' or open a new terminal to ensure all shell changes are applied."
