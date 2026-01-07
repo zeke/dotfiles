@@ -14,6 +14,9 @@ ln -sf ~/git/zeke/dotfiles/.zshrc .zshrc
 ln -sf ~/git/zeke/dotfiles/.gitignore_global .gitignore_global
 ln -sf ~/git/zeke/dotfiles/.claude .claude
 
+echo "Sourcing .zshrc..."
+source ~/.zshrc 2>/dev/null || true
+
 echo "Configuring git..."
 git config --global core.excludesfile ~/.gitignore_global
 git config --global user.name "Zeke Sikelianos"
@@ -30,7 +33,7 @@ echo "Creating secrets file if it doesn't exist..."
 touch ~/git/zeke/dotfiles/env.sh
 
 echo "Installing Homebrew packages..."
-brew bundle --file=~/git/zeke/dotfiles/Brewfile
+brew bundle --file=~/git/zeke/dotfiles/Brewfile --verbose
 
 echo "Configuring npm..."
 npm config set init-author-name "Zeke Sikelianos"
@@ -42,4 +45,5 @@ echo "Installing global npm packages..."
 npm i -g trymodule npe json shrug vmd ghwd
 
 echo "Done!"
+echo "Run 'source ~/.zshrc' or open a new terminal to ensure all shell changes are applied."
 echo "Install Snazzy theme for Terminal.app: https://github.com/sindresorhus/terminal-snazzy"
