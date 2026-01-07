@@ -224,7 +224,7 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 # Hishtory Config:
 export PATH="$PATH:/Users/z/.hishtory"
-source /Users/z/.hishtory/config.zsh
+[ -f "/Users/z/.hishtory/config.zsh" ] && source /Users/z/.hishtory/config.zsh
 
 # See also https://docs.atuin.sh/ as an alternative to hishtory
 
@@ -245,7 +245,7 @@ export PATH="$PATH:/Users/z/.lmstudio/bin"
 export PATH="$HOME/.local/bin:$PATH"
 
 
-eval "$(pyenv init --path)"
+# eval "$(pyenv init --path)"
 # eval "$(gh copilot alias -- zsh)"
 
 # bun completions
@@ -254,7 +254,7 @@ eval "$(pyenv init --path)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-. "/Users/z/.deno/env"
+# . "/Users/z/.deno/env"
 # Added by Antigravity
 export PATH="/Users/z/.antigravity/antigravity/bin:$PATH"
-source ~/.bashrc
+[ -f ~/.bashrc ] && source ~/.bashrc
