@@ -15,7 +15,7 @@ ln -sf ~/git/zeke/dotfiles/.gitignore_global .gitignore_global
 ln -sf ~/git/zeke/dotfiles/.claude .claude
 
 echo "Sourcing .zshrc..."
-source ~/.zshrc 2>/dev/null || true
+(source ~/.zshrc 2>/dev/null) || true
 
 echo "Configuring git..."
 git config --global core.excludesfile ~/.gitignore_global
