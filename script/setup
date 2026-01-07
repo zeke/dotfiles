@@ -42,7 +42,7 @@ npm config set init-author-url http://zeke.sikelianos.com
 npm config set init-license MIT
 
 echo "Installing global npm packages..."
-npm_packages="trymodule npe json shrug vmd ghwd"
+npm_packages="trymodule npe json shrug ghwd"
 for pkg in $npm_packages; do
   if ! npm list -g "$pkg" &>/dev/null; then
     npm i -g "$pkg"
