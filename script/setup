@@ -26,6 +26,9 @@ git config --global user.email zeke@sikelianos.com
 git config --global hub.protocol https
 git config --global init.defaultBranch main
 
+echo "Installing git hooks for dotfiles repo..."
+ln -sf ~/git/zeke/dotfiles/git/pre-commit ~/git/zeke/dotfiles/.git/hooks/pre-commit
+
 echo "Setting up VS Code..."
 mkdir -p ~/Library/Application\ Support/Code/User
 ln -sf ~/git/zeke/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json

@@ -1,7 +1,15 @@
+# Secrets - NEVER commit these
 env.sh
+*.env
+.env*
+secrets.sh
+credentials.json
+.credentials.json
 
+# Claude Code runtime files
 .claude/file-history
 .claude/history.jsonl
+.claude/hook-events.jsonl
 .claude/projects
 .claude/statsig
 .claude/todos

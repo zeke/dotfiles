@@ -15,7 +15,6 @@
     }
   },
   "git.autofetch": true,
-  "copilot.secret_key": "sk-ecCOtQYmy8Jhqk9RKM94Lct9Qfk3YXdDYUP4r7VZ",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },

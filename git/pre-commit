@@ -1,0 +1,29 @@
+#!/bin/sh
+# Pre-commit hook to prevent committing files with secrets
+
+# Files that should never be committed
+FORBIDDEN_FILES="env.sh secrets.sh .env credentials.json"
+
+for file in $FORBIDDEN_FILES; do
+    if git diff --cached --name-only | grep -q "^${file}$"; then
+        echo "ERROR: Attempted to commit '$file' which may contain secrets."
+        echo "This file is in the forbidden list."
+        exit 1
+    fi
+done
+
+# Check for common secret patterns in staged files (excluding this hook file itself)
+# Split pattern to avoid self-match: sk-ant, sk-proj, r8_, ghp_, github_pat_, hf_, AIzaSy
+PATTERNS='sk-ant-api[0-9]|sk-proj-[A-Za-z0-9]{20,}|r8_[A-Za-z0-9]{30,}|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9]{20,}|hf_[A-Za-z0-9]{30,}|AIzaSy[A-Za-z0-9_-]{30,}'
+
+# Exclude the pre-commit hook itself from the check
+if git diff --cached -- . ':(exclude)git/pre-commit' | grep -qE "$PATTERNS"; then
+    echo "ERROR: Possible secret/API key detected in staged changes!"
+    echo "Please review your changes and remove any secrets before committing."
+    echo ""
+    echo "Matched patterns:"
+    git diff --cached -- . ':(exclude)git/pre-commit' | grep -E "$PATTERNS" | head -5
+    exit 1
+fi
+
+exit 0

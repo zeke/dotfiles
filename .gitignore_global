@@ -1,4 +1,10 @@
 
+# Secrets - NEVER commit these anywhere
+env.sh
+secrets.sh
+.env.local
+credentials.json
+
 .DS_Store
 .pt
 node_modules
