@@ -1,3 +1,6 @@
+# Maximize Terminal window on startup
+printf '\e[9;1t'
+
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/Users/z/.zsh/completions:"* ]]; then export FPATH="/Users/z/.zsh/completions:$FPATH"; fi
 autoload -Uz compinit
