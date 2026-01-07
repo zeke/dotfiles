@@ -78,6 +78,5 @@
     "feature-dev@claude-code-plugins": false,
     "frontend-design@claude-code-plugins": true,
     "beads@beads-marketplace": true
-  },
-  "alwaysThinkingEnabled": false
+  }
 }

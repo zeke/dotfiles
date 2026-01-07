@@ -50,9 +50,9 @@ See [hooks/README.md](hooks/README.md) for details.
 
 - **feature-dev** - Guided feature development with codebase understanding
 
-## MCP servers
+## MCP servers (Claude Code)
 
-Here are the MCP servers I use:
+Here are the MCP servers I use with Claude Code:
 
 ```sh
 claude mcp add chrome-devtools --scope user -- npx chrome-devtools-mcp@latest
@@ -71,8 +71,6 @@ And the ones I have stopped using:
 ```sh
 claude mcp add playwright --scope user -- npx @playwright/mcp@latest --extension
 ```
-
-☝️ I find it's best to install MCP servers globally with the "user" scope, so they're avaialable across all projects.
 
 Edit `code ~/.claude.json` to manage these after installing them.
 
