@@ -13,6 +13,8 @@ echo "Creating symlinks..."
 ln -sf ~/git/zeke/dotfiles/.zshrc .zshrc
 ln -sf ~/git/zeke/dotfiles/.gitignore_global .gitignore_global
 ln -sf ~/git/zeke/dotfiles/.claude .claude
+mkdir -p ~/.config/opencode
+ln -sf ~/git/zeke/dotfiles/opencode/opencode.json ~/.config/opencode/opencode.json
 
 echo "Sourcing .zshrc..."
 (source ~/.zshrc 2>/dev/null) || true

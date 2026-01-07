@@ -1,0 +1,20 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "chrome-devtools": {
+      "type": "local",
+      "command": ["npx", "chrome-devtools-mcp@latest"]
+    },
+    "cloudflare-docs": {
+      "type": "remote",
+      "url": "https://docs.mcp.cloudflare.com/sse"
+    },
+    "replicate-code-mode": {
+      "type": "local",
+      "command": ["npx", "-y", "replicate-mcp@alpha", "--tools=code"],
+      "environment": {
+        "REPLICATE_API_TOKEN": "{env:REPLICATE_API_TOKEN}"
+      }
+    }
+  }
+}
