@@ -29,6 +29,7 @@ alias home='cd ~'
 alias i='npm install'
 alias la='ls -A1'
 alias m='git checkout main'
+alias o=opencode
 alias main='git checkout main'
 alias paste=pbpaste
 alias pop='git stash pop'
