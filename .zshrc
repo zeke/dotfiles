@@ -29,6 +29,9 @@ hist() { cat $HISTFILE | grep "$*"; }
 
 export EDITOR="code"
 
+# Ghostty Terminal Setup
+export GHOSTTY_CMD="open -a Ghostty"
+
 # brew install tree
 tree() {
   command tree -I 'node_modules' "$@"

@@ -56,11 +56,9 @@ for pkg in $npm_packages; do
   fi
 done
 
-echo "Installing Snazzy theme for Terminal.app..."
-open ~/git/zeke/dotfiles/terminal/Snazzy.terminal
-sleep 1
-defaults write com.apple.Terminal "Default Window Settings" -string "Snazzy"
-defaults write com.apple.Terminal "Startup Window Settings" -string "Snazzy"
+echo "Setting up Ghostty configuration..."
+mkdir -p ~/.config/ghostty
+ln -sf ~/git/zeke/dotfiles/ghostty/config ~/.config/ghostty/config
 
 echo "Done!"
 echo "Run 'source ~/.zshrc' or open a new terminal to ensure all shell changes are applied."

@@ -1,0 +1,7 @@
+# Ghostty Configuration
+# Using built-in themes - switch with: ghostty +list-themes
+
+
+theme = Snazzy
+font-family = "JetBrains Mono"
+font-size = 18
