@@ -5,3 +5,4 @@
 theme = Snazzy
 font-family = "JetBrains Mono"
 font-size = 18
+font-thicken = true
