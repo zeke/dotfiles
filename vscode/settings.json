@@ -38,7 +38,7 @@
     "plaintext": true,
     "markdown": true
   },
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Default Dark+",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "githubPullRequests.pullBranch": "never",
   "[python]": {
