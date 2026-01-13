@@ -36,8 +36,7 @@ Follow these guidelines when writing the body of the pull request:
 - Start the PR body with the words "This PR..."
 - Do not include a "Summary" heading
 - Do not mention the test plan
-- Include a section in the PR body called "Testing locally" that includes instructions for cloning the repo with gh, checking out the branch, setting up the environment, and reproducing the changes from the PR.
-- Include a section at the end of the PR body called "Prompts" that combines all user prompts verbatim from the Claude Code session as a blockquote
+- Include a section in the PR body called "Testing locally" that includes instructions for cloning the repo with gh (or glab), checking out the branch, setting up the environment, and reproducing the changes from the PR.
 - If there is a Linear ticket or GitHub issue, include a link to the ticket or issue in the PR body.
 
 ## Style guide
