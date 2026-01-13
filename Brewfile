@@ -43,6 +43,7 @@ brew 'uv'
 # brew 'gifsicle'
 
 # Apps
+cask 'affinity'
 cask 'arc'
 cask 'audacity'
 cask 'autodesk-fusion'
