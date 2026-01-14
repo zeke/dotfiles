@@ -7,7 +7,14 @@
     },
     "cloudflare-docs": {
       "type": "remote",
-      "url": "https://docs.mcp.cloudflare.com/sse"
+      "url": "https://docs.mcp.cloudflare.com/sse",
+      "enabled": true
+    },
+    "wiki": {
+      "type": "remote",
+      "url": "https://wiki.mcp.cfdata.org/mcp",
+      "enabled": true,
+      "oauth": {},
     },
     "replicate-code-mode": {
       "type": "local",
