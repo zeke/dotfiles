@@ -26,6 +26,13 @@
     "google-workspace": {
       "type": "remote",
       "url": "https://google-workspace-mcp.cto.cfdata.org/mcp"
+    },
+    "cloudflare-api": {
+      "type": "remote",
+      "url": "https://cloudflare-mcp.mattzcarey.workers.dev/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:CLOUDFLARE_API_TOKEN}"
+      }
     }
   }
 }
