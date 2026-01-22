@@ -16,12 +16,12 @@ Feel free to fork this repo and adapt it to your needs. If you create your own C
 
 - [CLAUDE.md](CLAUDE.md) - Instructions for Claude Code
   - Git workflow (semantic commits, feature branches)
-  - GitHub and Linear integrations
-  - PR writing guidelines
+  - GitHub, GitLab, and Linear integrations
+  - PR/MR writing guidelines
   - Code style preferences
 
 - [settings.json](settings.json) - Tool permissions and hooks
-  - Pre-approved commands (git, npm, gh, etc.)
+  - Pre-approved commands (git, npm, gh, glab, etc.)
   - Hook configurations for all lifecycle events
   - Plugin settings
 
@@ -29,7 +29,7 @@ Feel free to fork this repo and adapt it to your needs. If you create your own C
 
 Located in [commands/](commands/):
 
-- **pr.md** - Create branch, commit, push, and open PR with CI monitoring
+- **pr.md** - Create branch, commit, push, and open PR/MR with CI monitoring (supports both gh and glab)
 - **draft-social-post.md** - Draft social posts via Typefully API
 - **apply-replicate-writing-style.md** - Apply Replicate's style guide to text
 

@@ -4,6 +4,7 @@ tap 'heroku/brew'
 tap 'loopwork-ai/tap'
 tap 'planetscale/tap'
 tap 'thoughtbot/formulae' # for `pick` binary
+tap 'anomalyco/tap'
 tap 'travisvn/tap'
 
 # Binaries
@@ -20,6 +21,8 @@ brew 'go'
 brew 'imagemagick'
 brew 'magic-wormhole'
 brew 'node'
+brew 'pnpm'
+brew 'opencode'
 brew 'pick'
 brew 'pscale'
 brew 'pure'
@@ -41,6 +44,7 @@ brew 'uv'
 # brew 'gifsicle'
 
 # Apps
+cask 'affinity'
 cask 'arc'
 cask 'audacity'
 cask 'autodesk-fusion'
