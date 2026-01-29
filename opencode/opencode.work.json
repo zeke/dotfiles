@@ -1,0 +1,91 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "chrome-devtools": {
+      "type": "local",
+      "command": ["npx", "chrome-devtools-mcp@latest"]
+    },
+    "cloudflare-docs": {
+      "type": "remote",
+      "url": "https://docs.mcp.cloudflare.com/sse",
+      "enabled": true
+    },
+    "wiki": {
+      "type": "remote",
+      "url": "https://wiki.mcp.cfdata.org/mcp",
+      "enabled": true,
+      "oauth": {},
+    },
+    "replicate-code-mode": {
+      "type": "local",
+      "command": ["npx", "-y", "replicate-mcp@alpha", "--tools=code"],
+      "environment": {
+        "REPLICATE_API_TOKEN": "{env:REPLICATE_API_TOKEN}"
+      }
+    },
+    "google-workspace": {
+      "type": "remote",
+      "url": "https://google-workspace-mcp.cto.cfdata.org/mcp"
+    },
+    "cloudflare-api": {
+      "type": "remote",
+      "url": "https://cloudflare-mcp.mattzcarey.workers.dev/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:CLOUDFLARE_API_TOKEN}"
+      }
+    }
+  },
+  "permission": {
+    "read": {
+      "*": "allow"
+    },
+    "edit": {
+      "*": "allow"
+    },
+    "external_directory": {
+      "*": "ask",
+    },
+    "bash": {
+      "*": "ask",
+      "git status *": "allow",
+      "git diff *": "allow",
+      "git log *": "allow",
+      "git branch *": "allow",
+      "git show *": "allow",
+      "git stash list *": "allow",
+      "git remote *": "allow",
+      "git fetch *": "allow",
+      "git add *": "allow",
+      "git commit *": "allow",
+      "git checkout *": "allow",
+      "git switch *": "allow",
+      "git merge *": "allow",
+      "git rebase *": "allow",
+      "git push *": "allow",
+      "git reset --soft *": "ask",
+      "git reset --hard *": "deny",
+      "git push --force *": "deny",
+      "ls *": "allow",
+      "cat *": "allow",
+      "head *": "allow",
+      "tail *": "allow",
+      "find *": "allow",
+      "which *": "allow",
+      "pwd": "allow",
+      "echo *": "allow",
+      "mkdir *": "allow",
+      "cp *": "allow",
+      "mv *": "allow",
+      "rm *": "allow",
+      "rm -rf *": "deny",
+      "pnpm *": "allow",
+      "npm *": "allow",
+      "npx *": "allow",
+      "node *": "allow",
+      "bun *": "allow",
+      "lsof *": "allow",
+      "kill *": "allow",
+      "wrangler *": "allow"
+    }
+  }
+}
