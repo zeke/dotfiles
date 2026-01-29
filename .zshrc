@@ -136,7 +136,7 @@ review_pr() {
 }
 
 mv_screenshots() {
-  mv ~/Desktop/Screenshot* ~/Google/Screenshots
+  mv ~/Desktop/Screenshot* ~/Screenshots
   # mv ~/Desktop/Screen\ Recording* ~/Google/Screenshots
 }
 

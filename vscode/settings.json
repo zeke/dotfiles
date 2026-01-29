@@ -51,5 +51,6 @@
   "nxConsole.showNodeVersionOnStartup": false,
   "claudeCode.preferredLocation": "sidebar",
   "chat.viewSessions.orientation": "stacked",
-  "github.copilot.nextEditSuggestions.enabled": true
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
