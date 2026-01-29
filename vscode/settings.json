@@ -38,7 +38,7 @@
     "plaintext": true,
     "markdown": true
   },
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Default Light+",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "githubPullRequests.pullBranch": "never",
   "[python]": {
@@ -50,5 +50,6 @@
   "workbench.activityBar.location": "hidden",
   "nxConsole.showNodeVersionOnStartup": false,
   "claudeCode.preferredLocation": "sidebar",
-  "chat.viewSessions.orientation": "stacked"
+  "chat.viewSessions.orientation": "stacked",
+  "github.copilot.nextEditSuggestions.enabled": true
 }
