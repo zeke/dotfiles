@@ -1,0 +1,24 @@
+[core]
+	excludesfile = /Users/z/.gitignore_global
+[user]
+	name = Zeke Sikelianos
+	email = zeke@sikelianos.com
+[hub]
+	protocol = https
+[init]
+	defaultBranch = main
+[include]
+	path = /Users/z/.local/share/cloudflare-warp-certs/gitconfig
+[includeIf "hasconfig:remote.*.url:git@gitlab.cfdata.org:*/**"]
+	path = /Users/z/.gitconfig-work
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[credential "https://github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/opt/homebrew/bin/gh auth git-credential
