@@ -10,6 +10,14 @@
 - When creating git commits, always use a semantic commit prefixes, with or without parenthetical qualifiers.
 - When opening pull requests or merge requests, always use a semantic commit message as the title.
 
+## Working with Node.js and npm
+
+- Always use `npx` when running global npm CLIs, e.g. `npx wrangler` instead of `wrangler`
+
+## Working with Cloudflare
+
+- Always using JSONC for Workers configs
+
 ## Working with GitHub and GitLab
 
 - Use `gh` for GitHub repositories and `glab` for GitLab repositories.
