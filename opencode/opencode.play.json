@@ -10,22 +10,12 @@
       "url": "https://docs.mcp.cloudflare.com/sse",
       "enabled": true
     },
-    "wiki": {
-      "type": "remote",
-      "url": "https://wiki.mcp.cfdata.org/mcp",
-      "enabled": true,
-      "oauth": {},
-    },
     "replicate-code-mode": {
       "type": "local",
       "command": ["npx", "-y", "replicate-mcp@alpha", "--tools=code"],
       "environment": {
         "REPLICATE_API_TOKEN": "{env:REPLICATE_API_TOKEN}"
       }
-    },
-    "google-workspace": {
-      "type": "remote",
-      "url": "https://google-workspace-mcp.cto.cfdata.org/mcp"
     },
     "cloudflare-api": {
       "type": "remote",
