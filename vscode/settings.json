@@ -50,6 +50,7 @@
   "workbench.activityBar.location": "hidden",
   "nxConsole.showNodeVersionOnStartup": false,
   "claudeCode.preferredLocation": "sidebar",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "chat.viewSessions.orientation": "stacked",
-  "workbench.secondarySideBar.defaultVisibility": "hidden"
+  "github.copilot.nextEditSuggestions.enabled": true
 }
