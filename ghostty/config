@@ -9,11 +9,14 @@ font-family = "JetBrains Mono"
 
 # To see a list of available themes, run ghostty +list-themes.
 # theme = Snazzy
-# theme = "Alien Blood"
+# theme = Alien Blood
 # theme = Arthur
 # theme = C64
+theme = dark:nord,light:3024 Day
+
 
 font-size = 18
 font-thicken = true
+copy-on-select = true
 macos-icon = custom
 macos-custom-icon = ~/git/zeke/dotfiles/ghostty/iTerm2-green-dollar.icns
