@@ -24,6 +24,7 @@
 - When writing a pull request (GitHub) or merge request (GitLab) body, be concise. Explain the problem and the solution succinctly.
 - Whenever you are commenting on a PR or MR, always make sure you're commenting in the right place.
 - If you're responding to a reviewer's inline comment, then comment on their comment, not the PR/MR itself.
+- After creating or updating a pull request or merge request or issue, offer to open the URL in my default browser for me.
 
 ## Writing a good PR body
 
@@ -55,4 +56,5 @@ If you make web requests to public pages and get blocked by sites like OpenAI's 
 ## Important rules
 
 - IMPORTANT: NEVER PUSH TO THE MAIN OR DEFAULT BRANCH. ALWAYS PUSH TO A FEATURE BRANCH.
+- IMPORTANT: If your last message included HTTP or HTTPS URLs, offer to open those for me in my default browser.
 - Don't push commits to branches with PRs that have already been merged.
