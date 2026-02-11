@@ -1,6 +1,15 @@
 #!/bin/bash
 set -e
 
+SKIP_BREW_UPDATE=0
+for arg in "$@"; do
+  case "$arg" in
+    --skip-brew-update)
+      SKIP_BREW_UPDATE=1
+      ;;
+  esac
+done
+
 cd ~
 
 if ! command -v brew &> /dev/null; then
@@ -9,8 +18,16 @@ if ! command -v brew &> /dev/null; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+if [ "$SKIP_BREW_UPDATE" -eq 1 ]; then
+  export HOMEBREW_NO_AUTO_UPDATE=1
+  export HOMEBREW_NO_INSTALL_UPGRADE=1
+fi
+
 echo "Creating symlinks..."
 ln -sf ~/git/zeke/dotfiles/.zshrc .zshrc
+ln -sf ~/git/zeke/dotfiles/.hushlogin .hushlogin
+ln -sf ~/git/zeke/dotfiles/.gitconfig .gitconfig
+ln -sf ~/git/zeke/dotfiles/.gitconfig-work .gitconfig-work
 ln -sf ~/git/zeke/dotfiles/.gitignore_global .gitignore_global
 ln -sf ~/git/zeke/dotfiles/.claude .claude
 mkdir -p ~/.config/opencode
@@ -35,13 +52,6 @@ ln -sf "$opencode_config" ~/.config/opencode/opencode.json
 
 echo "Sourcing .zshrc..."
 (source ~/.zshrc 2>/dev/null) || true
-
-echo "Configuring git..."
-git config --global core.excludesfile ~/.gitignore_global
-git config --global user.name "Zeke Sikelianos"
-git config --global user.email zeke@sikelianos.com
-git config --global hub.protocol https
-git config --global init.defaultBranch main
 
 echo "Installing git hooks for dotfiles repo..."
 ln -sf ~/git/zeke/dotfiles/git/pre-commit ~/git/zeke/dotfiles/.git/hooks/pre-commit
