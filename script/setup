@@ -35,11 +35,11 @@ while true; do
   read -r -p "Choose OpenCode profile (work/play): " opencode_profile
   case "$opencode_profile" in
     work)
-      opencode_config=~/git/zeke/dotfiles/opencode/opencode.work.json
+      opencode_config=~/git/zeke/dotfiles/opencode/opencode.work.jsonc
       break
       ;;
     play)
-      opencode_config=~/git/zeke/dotfiles/opencode/opencode.play.json
+      opencode_config=~/git/zeke/dotfiles/opencode/opencode.play.jsonc
       break
       ;;
     *)
@@ -48,7 +48,7 @@ while true; do
   esac
 done
 echo "Using OpenCode profile: $opencode_profile"
-ln -sf "$opencode_config" ~/.config/opencode/opencode.json
+ln -sf "$opencode_config" ~/.config/opencode/opencode.jsonc
 
 echo "Sourcing .zshrc..."
 (source ~/.zshrc 2>/dev/null) || true
