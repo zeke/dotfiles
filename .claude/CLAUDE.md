@@ -49,6 +49,15 @@ Follow these style guidelines in chat, commit messages, and prose:
 - When writing markdown, avoid using headings smaller than H2
 - When writing markdown, don't use bold.
 
+## Types and documentation
+
+- Prefer types over prose documentation for API contracts. Types are executable and can't drift from the implementation.
+- Define schemas (e.g. Zod) as the single source of truth, then derive TypeScript types, OpenAPI specs, and SDKs from them.
+- Use schema-first design: the schema defines the contract, and the implementation conforms to it. Don't generate types from runtime behavior.
+- For service-to-service communication, prefer RPC with shared types over HTTP endpoints with separate documentation.
+- Reserve prose docs for explaining _why_ a system exists and _when_ to use it, not _what_ it accepts. Types handle the _what_.
+- If an API is too complex to type, that's a design problem worth fixing.
+
 ## Fetching data
 
 If you make web requests to public pages and get blocked by sites like OpenAI's docs pages returning 403 status codes, use Chrome Devtools MCP to open the page and get the content.
